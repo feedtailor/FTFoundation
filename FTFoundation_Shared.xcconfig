@@ -1,0 +1,5 @@
+//
+//  Copyright (c) 2012 feedtailor Inc. All rights reserved.
+//
+
+OTHER_LDFLAGS_FTFOUNDATION = -ObjC -all_load -lz -framework MobileCoreServices -framework Security -framework CoreData -framework SystemConfiguration -framework CoreFoundation
