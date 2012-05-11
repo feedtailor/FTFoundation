@@ -1,0 +1,76 @@
+{
+    "description" : "説明",
+    "title" : "説明",
+    "type" : "object",
+    "properties" : {
+        "id"    : { "type":"number", "required":true},
+        "name"  : { "type":"string", "required":true},
+        "price" : { "type":"number", "minimum":0, "maximum":10000, "required":true},
+
+        "hoge"    : { "type":"boolean", "required":true},
+
+        "nested_obj1" : {
+            "type" : "object",
+            "required":true,
+            "properties" : {
+                "hoge" : { "type":"integer", "minimum":1, "maximum":10, "required":true},
+                "fuga"    : { "type":"boolean", "required":true},
+
+                "nested_obj2" : {
+                    "type" : "object",
+                    "required":true,
+                    "properties" : {
+                        "hoge2" : { "type":"integer", "minimum":1, "maximum":10, "required":true},
+                        "fuga2"    : { "type":"boolean", "required":true}
+                    }
+                }
+            }
+        },
+
+        "no_check" : { "type" : "any", "required":true},
+
+        "string_list" : {
+            "type" : "array",
+            "required":true,
+            "items" : {
+                "type":"string", "required":true
+            }
+        },
+
+        "any_list" : {
+            "type" : "array",
+            "items" : { "type":"any" }
+        },
+
+        "obj_list" : {
+            "required":true,
+            "type" : "array",
+            "items" : {
+                "type" : "object",
+                    "properties" : {
+                        "name" : { "type":"string", "required":true},
+                        "age"    : { "type":"integer", "required":true}
+                    }
+            }
+        },
+
+        "multitype_list" : {
+            "required":true,
+            "type" : "array",
+            "items" : {
+                "type": ["boolean", "string", "object", "null"],
+                "properties" : {
+                    "name" : { "type":"string", "required":true},
+                    "age"    : { "type":"integer", "required":true}
+                }
+            }
+        },
+
+        "countList" : {
+            "type" : "array",
+            "items" : { "type":"any" },
+            "minItems" : 3,
+            "maxItems" : 5,
+        },
+    }
+}

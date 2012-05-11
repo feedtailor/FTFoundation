@@ -4,4 +4,4 @@
 
 #import <Foundation/Foundation.h>
 
-void FTCFAutorelease(CFTypeRef object);
+CFTypeRef FTCFAutorelease(CFTypeRef object);

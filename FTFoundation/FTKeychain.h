@@ -7,6 +7,13 @@
 @interface FTKeychain : NSObject
 
 + (NSString*)passwordForService:(NSString*)service account:(NSString*)account error:(NSError **)error;
+
++ (BOOL)setPassword:(NSString*)password
+		 forService:(NSString*)service
+			account:(NSString*)account
+  secAttrAccessible:(CFTypeRef)secAttrAccessible	// kSecAttrAccessible の取りうる値 or NULL
+			  error:(NSError **)error;
+
 + (BOOL)setPassword:(NSString*)password forService:(NSString*)service account:(NSString*)account error:(NSError **)error;
 
 + (BOOL)removePasswordForService:(NSString*)service	// optional

@@ -48,7 +48,11 @@
 	return password;
 }
 
-+ (BOOL)setPassword:(NSString*)password forService:(NSString*)service account:(NSString*)account error:(NSError **)error
++ (BOOL)setPassword:(NSString*)password
+		 forService:(NSString*)service
+			account:(NSString*)account
+  secAttrAccessible:(CFTypeRef)secAttrAccessible	// kSecAttrAccessible の取りうる値 or NULL
+			  error:(NSError **)error
 {
 	BOOL result = NO;
 
@@ -66,6 +70,9 @@
 		{
 			NSMutableDictionary* attributes = [NSMutableDictionary dictionary];
 			[attributes setObject:passwordData forKey:(__bridge id)kSecValueData];
+			if(secAttrAccessible) {
+				[attributes setObject:(__bridge id)secAttrAccessible forKey:(__bridge id)kSecAttrAccessible];
+			}
 			
 			status = SecItemUpdate((__bridge CFDictionaryRef)query, (__bridge CFDictionaryRef)attributes);
 			if(status == errSecSuccess) {
@@ -85,6 +92,9 @@
 			[attributes setObject:service forKey:(__bridge id)kSecAttrService];
 			[attributes setObject:account forKey:(__bridge id)kSecAttrAccount];
 			[attributes setObject:passwordData forKey:(__bridge id)kSecValueData];
+			if(secAttrAccessible) {
+				[attributes setObject:(__bridge id)secAttrAccessible forKey:(__bridge id)kSecAttrAccessible];
+			}
 			
 			status = SecItemAdd((__bridge CFDictionaryRef)attributes, NULL);
 			if(status == errSecSuccess) {
@@ -107,6 +117,11 @@
 	}
 	
 	return result;
+}
+
++ (BOOL)setPassword:(NSString*)password forService:(NSString*)service account:(NSString*)account error:(NSError **)error
+{
+	return [self setPassword:password forService:service account:account secAttrAccessible:NULL error:error];
 }
 
 + (BOOL)removePasswordForService:(NSString*)service account:(NSString*)account error:(NSError **)error

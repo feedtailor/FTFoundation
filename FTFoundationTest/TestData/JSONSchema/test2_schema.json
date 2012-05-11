@@ -1,0 +1,14 @@
+{
+    "description" : "1以上10以下の数値の配列",
+    "title" : "説明",
+    "type" : "array",
+    "minItems" : 1,
+    "maxItems" : 5,
+    "items" : {
+        "type" : "object",
+        "properties" : {
+            "age" : { "type":"integer", "minimum":1, "maximum":10, "required":true},
+            "name"    : { "type":"string", "required":true}
+        }
+    }
+}

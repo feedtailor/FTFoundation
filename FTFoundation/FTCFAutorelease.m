@@ -4,7 +4,7 @@
 
 #import "FTCFAutorelease.h"
 
-void FTCFAutorelease(CFTypeRef object)
+CFTypeRef FTCFAutorelease(CFTypeRef object)
 {
-	[((id)object) autorelease];
+	return (CFTypeRef)[((id)object) autorelease];
 }

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57961CE615196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.h in Headers */ = {isa = PBXBuildFile; fileRef = 57961CE415196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.h */; };
-		57961CE715196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.m in Sources */ = {isa = PBXBuildFile; fileRef = 57961CE515196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.m */; };
 		57A47BAA14C80A7D0004A13A /* FTCharacterEncodingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A47BA614C80A7D0004A13A /* FTCharacterEncodingTool.h */; };
 		57A47BAB14C80A7D0004A13A /* FTCharacterEncodingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A47BA714C80A7D0004A13A /* FTCharacterEncodingTool.m */; };
 		57A47BB314C80C300004A13A /* FTNSData+GZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A47BB114C80C300004A13A /* FTNSData+GZip.h */; };
@@ -62,15 +60,34 @@
 		57D66C9014D90EA7004B3759 /* FTNSObject+Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C8E14D90EA7004B3759 /* FTNSObject+Tag.m */; };
 		57D66C9414D90F47004B3759 /* FTCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C9214D90F47004B3759 /* FTCSVParser.h */; };
 		57D66C9514D90F47004B3759 /* FTCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C9314D90F47004B3759 /* FTCSVParser.m */; };
+		57EF27A21551108200C01032 /* FTOAuth10.h in Headers */ = {isa = PBXBuildFile; fileRef = 57EF27A01551108200C01032 /* FTOAuth10.h */; };
+		57EF27A31551108200C01032 /* FTOAuth10.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF27A11551108200C01032 /* FTOAuth10.m */; };
 		BE02556B150601A70068D91D /* FTKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = BE025569150601A70068D91D /* FTKeychain.h */; };
 		BE02556C150601A70068D91D /* FTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BE02556A150601A70068D91D /* FTKeychain.m */; };
-		BE09887E153561EE0054BCFF /* FTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BE09887D153561EE0054BCFF /* FTFoundation.h */; };
-		BE12C6AB15204E160022E15A /* FTWeakDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = BE12C6A915204E160022E15A /* FTWeakDelegateProxy.h */; };
-		BE12C6AC15204E160022E15A /* FTWeakDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE12C6AA15204E160022E15A /* FTWeakDelegateProxy.m */; };
-		BE853F2C1523F1B80051A539 /* FTNSBlockOperation+SelfReference.h in Headers */ = {isa = PBXBuildFile; fileRef = BE853F2A1523F1B80051A539 /* FTNSBlockOperation+SelfReference.h */; };
-		BE853F2D1523F1B80051A539 /* FTNSBlockOperation+SelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BE853F2B1523F1B80051A539 /* FTNSBlockOperation+SelfReference.m */; };
-		BE931E9715132B5B00A819D5 /* FTCFAutorelease.h in Headers */ = {isa = PBXBuildFile; fileRef = BE931E9515132B5B00A819D5 /* FTCFAutorelease.h */; };
-		BE931E9815132B5B00A819D5 /* FTCFAutorelease.m in Sources */ = {isa = PBXBuildFile; fileRef = BE931E9615132B5B00A819D5 /* FTCFAutorelease.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE1610041519CCF800FDEDE5 /* test2_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610021519CCF700FDEDE5 /* test2_schema.json */; };
+		BE1610051519CCF800FDEDE5 /* test2_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610031519CCF800FDEDE5 /* test2_valid_1.json */; };
+		BE5265E51510673600C4C909 /* FTJSONSchemaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */; };
+		BE5265EC1510695600C4C909 /* test1_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265E91510695600C4C909 /* test1_invalid_1.json */; };
+		BE5265ED1510695600C4C909 /* test1_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EA1510695600C4C909 /* test1_schema.json */; };
+		BE5265EE1510695600C4C909 /* test1_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EB1510695600C4C909 /* test1_valid_1.json */; };
+		BE5265F2151069AD00C4C909 /* FTJSONSchemaValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5265F0151069AD00C4C909 /* FTJSONSchemaValidator.h */; };
+		BE5265F3151069AD00C4C909 /* FTJSONSchemaValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265F1151069AD00C4C909 /* FTJSONSchemaValidator.m */; };
+		BE7DD6B0154645A000C6D97F /* NSFileManager+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7DD6AE154645A000C6D97F /* NSFileManager+Utilities.h */; };
+		BE7DD6B1154645A000C6D97F /* NSFileManager+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */; };
+		BE8F4254155CE69900881DE8 /* FTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8F4253155CE69900881DE8 /* FTFoundation.h */; };
+		BE99B2821536BF9700904355 /* FTCFAutorelease.h in Headers */ = {isa = PBXBuildFile; fileRef = BE99B27A1536BF9600904355 /* FTCFAutorelease.h */; };
+		BE99B2831536BF9700904355 /* FTCFAutorelease.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99B27B1536BF9600904355 /* FTCFAutorelease.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE99B2841536BF9700904355 /* FTNSBlockOperation+SelfReference.h in Headers */ = {isa = PBXBuildFile; fileRef = BE99B27C1536BF9600904355 /* FTNSBlockOperation+SelfReference.h */; };
+		BE99B2851536BF9700904355 /* FTNSBlockOperation+SelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99B27D1536BF9600904355 /* FTNSBlockOperation+SelfReference.m */; };
+		BE99B2861536BF9700904355 /* FTNSHTTPCookieStorage+Delete.h in Headers */ = {isa = PBXBuildFile; fileRef = BE99B27E1536BF9600904355 /* FTNSHTTPCookieStorage+Delete.h */; };
+		BE99B2871536BF9700904355 /* FTNSHTTPCookieStorage+Delete.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99B27F1536BF9600904355 /* FTNSHTTPCookieStorage+Delete.m */; };
+		BE99B2881536BF9700904355 /* FTWeakDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = BE99B2801536BF9700904355 /* FTWeakDelegateProxy.h */; };
+		BE99B2891536BF9700904355 /* FTWeakDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99B2811536BF9700904355 /* FTWeakDelegateProxy.m */; };
+		BEA331FD153664F200EE8D2D /* test2_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BEA331FC153664F200EE8D2D /* test2_invalid_1.json */; };
+		BEA33223153675F300EE8D2D /* csv_CR.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33220153675F300EE8D2D /* csv_CR.csv */; };
+		BEA33224153675F300EE8D2D /* csv_CRLF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33221153675F300EE8D2D /* csv_CRLF.csv */; };
+		BEA33225153675F300EE8D2D /* csv_LF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33222153675F300EE8D2D /* csv_LF.csv */; };
+		BEA332291536760B00EE8D2D /* FTCSVParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA332281536760B00EE8D2D /* FTCSVParserTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +102,6 @@
 
 /* Begin PBXFileReference section */
 		572582D514C902C600ACB4B5 /* FTFoundationTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FTFoundationTest.xcconfig; sourceTree = "<group>"; };
-		57961CE415196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSHTTPCookieStorage+Delete.h"; sourceTree = "<group>"; };
-		57961CE515196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSHTTPCookieStorage+Delete.m"; sourceTree = "<group>"; };
 		57A47BA614C80A7D0004A13A /* FTCharacterEncodingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCharacterEncodingTool.h; sourceTree = "<group>"; };
 		57A47BA714C80A7D0004A13A /* FTCharacterEncodingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCharacterEncodingTool.m; sourceTree = "<group>"; };
 		57A47BB114C80C300004A13A /* FTNSData+GZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSData+GZip.h"; sourceTree = "<group>"; };
@@ -152,15 +167,36 @@
 		57D66C8E14D90EA7004B3759 /* FTNSObject+Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSObject+Tag.m"; sourceTree = "<group>"; };
 		57D66C9214D90F47004B3759 /* FTCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCSVParser.h; sourceTree = "<group>"; };
 		57D66C9314D90F47004B3759 /* FTCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCSVParser.m; sourceTree = "<group>"; };
+		57EF27A01551108200C01032 /* FTOAuth10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTOAuth10.h; sourceTree = "<group>"; };
+		57EF27A11551108200C01032 /* FTOAuth10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTOAuth10.m; sourceTree = "<group>"; };
 		BE025569150601A70068D91D /* FTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTKeychain.h; sourceTree = "<group>"; };
 		BE02556A150601A70068D91D /* FTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTKeychain.m; sourceTree = "<group>"; };
-		BE09887D153561EE0054BCFF /* FTFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFoundation.h; sourceTree = "<group>"; };
-		BE12C6A915204E160022E15A /* FTWeakDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWeakDelegateProxy.h; sourceTree = "<group>"; };
-		BE12C6AA15204E160022E15A /* FTWeakDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWeakDelegateProxy.m; sourceTree = "<group>"; };
-		BE853F2A1523F1B80051A539 /* FTNSBlockOperation+SelfReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSBlockOperation+SelfReference.h"; sourceTree = "<group>"; };
-		BE853F2B1523F1B80051A539 /* FTNSBlockOperation+SelfReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSBlockOperation+SelfReference.m"; sourceTree = "<group>"; };
-		BE931E9515132B5B00A819D5 /* FTCFAutorelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCFAutorelease.h; sourceTree = "<group>"; };
-		BE931E9615132B5B00A819D5 /* FTCFAutorelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCFAutorelease.m; sourceTree = "<group>"; };
+		BE1610021519CCF700FDEDE5 /* test2_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_schema.json; sourceTree = "<group>"; };
+		BE1610031519CCF800FDEDE5 /* test2_valid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_valid_1.json; sourceTree = "<group>"; };
+		BE5265E31510673600C4C909 /* FTJSONSchemaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTJSONSchemaTest.h; sourceTree = "<group>"; };
+		BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTJSONSchemaTest.m; sourceTree = "<group>"; };
+		BE5265E91510695600C4C909 /* test1_invalid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_invalid_1.json; sourceTree = "<group>"; };
+		BE5265EA1510695600C4C909 /* test1_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_schema.json; sourceTree = "<group>"; };
+		BE5265EB1510695600C4C909 /* test1_valid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_valid_1.json; sourceTree = "<group>"; };
+		BE5265F0151069AD00C4C909 /* FTJSONSchemaValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTJSONSchemaValidator.h; sourceTree = "<group>"; };
+		BE5265F1151069AD00C4C909 /* FTJSONSchemaValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTJSONSchemaValidator.m; sourceTree = "<group>"; };
+		BE7DD6AE154645A000C6D97F /* NSFileManager+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utilities.h"; sourceTree = "<group>"; };
+		BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utilities.m"; sourceTree = "<group>"; };
+		BE8F4253155CE69900881DE8 /* FTFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFoundation.h; sourceTree = "<group>"; };
+		BE99B27A1536BF9600904355 /* FTCFAutorelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCFAutorelease.h; sourceTree = "<group>"; };
+		BE99B27B1536BF9600904355 /* FTCFAutorelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCFAutorelease.m; sourceTree = "<group>"; };
+		BE99B27C1536BF9600904355 /* FTNSBlockOperation+SelfReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSBlockOperation+SelfReference.h"; sourceTree = "<group>"; };
+		BE99B27D1536BF9600904355 /* FTNSBlockOperation+SelfReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSBlockOperation+SelfReference.m"; sourceTree = "<group>"; };
+		BE99B27E1536BF9600904355 /* FTNSHTTPCookieStorage+Delete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSHTTPCookieStorage+Delete.h"; sourceTree = "<group>"; };
+		BE99B27F1536BF9600904355 /* FTNSHTTPCookieStorage+Delete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSHTTPCookieStorage+Delete.m"; sourceTree = "<group>"; };
+		BE99B2801536BF9700904355 /* FTWeakDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWeakDelegateProxy.h; sourceTree = "<group>"; };
+		BE99B2811536BF9700904355 /* FTWeakDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWeakDelegateProxy.m; sourceTree = "<group>"; };
+		BEA331FC153664F200EE8D2D /* test2_invalid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_invalid_1.json; sourceTree = "<group>"; };
+		BEA33220153675F300EE8D2D /* csv_CR.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csv_CR.csv; sourceTree = "<group>"; };
+		BEA33221153675F300EE8D2D /* csv_CRLF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csv_CRLF.csv; sourceTree = "<group>"; };
+		BEA33222153675F300EE8D2D /* csv_LF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csv_LF.csv; sourceTree = "<group>"; };
+		BEA332271536760B00EE8D2D /* FTCSVParserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCSVParserTest.h; sourceTree = "<group>"; };
+		BEA332281536760B00EE8D2D /* FTCSVParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCSVParserTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +224,16 @@
 		57A47BAD14C80A820004A13A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BE7DD6AE154645A000C6D97F /* NSFileManager+Utilities.h */,
+				BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */,
+				BE99B27A1536BF9600904355 /* FTCFAutorelease.h */,
+				BE99B27B1536BF9600904355 /* FTCFAutorelease.m */,
+				BE99B27C1536BF9600904355 /* FTNSBlockOperation+SelfReference.h */,
+				BE99B27D1536BF9600904355 /* FTNSBlockOperation+SelfReference.m */,
+				BE99B27E1536BF9600904355 /* FTNSHTTPCookieStorage+Delete.h */,
+				BE99B27F1536BF9600904355 /* FTNSHTTPCookieStorage+Delete.m */,
+				BE99B2801536BF9700904355 /* FTWeakDelegateProxy.h */,
+				BE99B2811536BF9700904355 /* FTWeakDelegateProxy.m */,
 				BE025569150601A70068D91D /* FTKeychain.h */,
 				BE02556A150601A70068D91D /* FTKeychain.m */,
 				57A47BA614C80A7D0004A13A /* FTCharacterEncodingTool.h */,
@@ -202,15 +248,7 @@
 				57D66C8E14D90EA7004B3759 /* FTNSObject+Tag.m */,
 				57D66C9214D90F47004B3759 /* FTCSVParser.h */,
 				57D66C9314D90F47004B3759 /* FTCSVParser.m */,
-				BE931E9515132B5B00A819D5 /* FTCFAutorelease.h */,
-				BE931E9615132B5B00A819D5 /* FTCFAutorelease.m */,
 				57A8E92B15008EE4006493E4 /* FTMacros.h */,
-				57961CE415196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.h */,
-				57961CE515196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.m */,
-				BE12C6A915204E160022E15A /* FTWeakDelegateProxy.h */,
-				BE12C6AA15204E160022E15A /* FTWeakDelegateProxy.m */,
-				BE853F2A1523F1B80051A539 /* FTNSBlockOperation+SelfReference.h */,
-				BE853F2B1523F1B80051A539 /* FTNSBlockOperation+SelfReference.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -251,6 +289,7 @@
 				57B32C4D14C6B05F00C39CA2 /* Data */,
 				57B32C0E14C694CC00C39CA2 /* Code */,
 				57D66C9114D90F1F004B3759 /* CoreData */,
+				BE5265EF1510697D00C4C909 /* JSON */,
 				57A47BAD14C80A820004A13A /* Other */,
 				57B32BB714C6850000C39CA2 /* Supporting Files */,
 			);
@@ -260,7 +299,7 @@
 		57B32BB714C6850000C39CA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE09887D153561EE0054BCFF /* FTFoundation.h */,
+				BE8F4253155CE69900881DE8 /* FTFoundation.h */,
 				57B32BB814C6850000C39CA2 /* FTFoundation-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -294,6 +333,8 @@
 				57B32C0714C6915E00C39CA2 /* FTSHA1.m */,
 				57B32C0A14C6942600C39CA2 /* FTHMAC.h */,
 				57B32C0B14C6942600C39CA2 /* FTHMAC.m */,
+				57EF27A01551108200C01032 /* FTOAuth10.h */,
+				57EF27A11551108200C01032 /* FTOAuth10.m */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -315,6 +356,11 @@
 				57B32C4314C6AD0B00C39CA2 /* FTSHA1Test.m */,
 				57B32C4E14C6B09400C39CA2 /* FTNSDataCryptoTest.h */,
 				57B32C4F14C6B09400C39CA2 /* FTNSDataCryptoTest.m */,
+				BE5265E31510673600C4C909 /* FTJSONSchemaTest.h */,
+				BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */,
+				BEA332271536760B00EE8D2D /* FTCSVParserTest.h */,
+				BEA332281536760B00EE8D2D /* FTCSVParserTest.m */,
+				BE5265E71510692B00C4C909 /* Test Data */,
 				57B32C1B14C695A600C39CA2 /* Supporting Files */,
 				57B32C3B14C6AB6400C39CA2 /* Common.h */,
 				572582D514C902C600ACB4B5 /* FTFoundationTest.xcconfig */,
@@ -356,6 +402,49 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		BE5265E71510692B00C4C909 /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				BEA3321F153675F300EE8D2D /* CSV */,
+				BE5265E81510695600C4C909 /* JSONSchema */,
+			);
+			name = "Test Data";
+			sourceTree = "<group>";
+		};
+		BE5265E81510695600C4C909 /* JSONSchema */ = {
+			isa = PBXGroup;
+			children = (
+				BE5265EA1510695600C4C909 /* test1_schema.json */,
+				BE5265EB1510695600C4C909 /* test1_valid_1.json */,
+				BE5265E91510695600C4C909 /* test1_invalid_1.json */,
+				BE1610021519CCF700FDEDE5 /* test2_schema.json */,
+				BE1610031519CCF800FDEDE5 /* test2_valid_1.json */,
+				BEA331FC153664F200EE8D2D /* test2_invalid_1.json */,
+			);
+			name = JSONSchema;
+			path = TestData/JSONSchema;
+			sourceTree = "<group>";
+		};
+		BE5265EF1510697D00C4C909 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				BE5265F0151069AD00C4C909 /* FTJSONSchemaValidator.h */,
+				BE5265F1151069AD00C4C909 /* FTJSONSchemaValidator.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		BEA3321F153675F300EE8D2D /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				BEA33220153675F300EE8D2D /* csv_CR.csv */,
+				BEA33221153675F300EE8D2D /* csv_CRLF.csv */,
+				BEA33222153675F300EE8D2D /* csv_LF.csv */,
+			);
+			name = CSV;
+			path = TestData/CSV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -385,11 +474,14 @@
 				57D66C9414D90F47004B3759 /* FTCSVParser.h in Headers */,
 				57A8E92C15008EE4006493E4 /* FTMacros.h in Headers */,
 				BE02556B150601A70068D91D /* FTKeychain.h in Headers */,
-				BE931E9715132B5B00A819D5 /* FTCFAutorelease.h in Headers */,
-				57961CE615196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.h in Headers */,
-				BE12C6AB15204E160022E15A /* FTWeakDelegateProxy.h in Headers */,
-				BE853F2C1523F1B80051A539 /* FTNSBlockOperation+SelfReference.h in Headers */,
-				BE09887E153561EE0054BCFF /* FTFoundation.h in Headers */,
+				BE5265F2151069AD00C4C909 /* FTJSONSchemaValidator.h in Headers */,
+				BE99B2821536BF9700904355 /* FTCFAutorelease.h in Headers */,
+				BE99B2841536BF9700904355 /* FTNSBlockOperation+SelfReference.h in Headers */,
+				BE99B2861536BF9700904355 /* FTNSHTTPCookieStorage+Delete.h in Headers */,
+				BE99B2881536BF9700904355 /* FTWeakDelegateProxy.h in Headers */,
+				BE7DD6B0154645A000C6D97F /* NSFileManager+Utilities.h in Headers */,
+				57EF27A21551108200C01032 /* FTOAuth10.h in Headers */,
+				BE8F4254155CE69900881DE8 /* FTFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +557,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B32C1F14C695A600C39CA2 /* InfoPlist.strings in Resources */,
+				BE5265EC1510695600C4C909 /* test1_invalid_1.json in Resources */,
+				BE5265ED1510695600C4C909 /* test1_schema.json in Resources */,
+				BE5265EE1510695600C4C909 /* test1_valid_1.json in Resources */,
+				BE1610041519CCF800FDEDE5 /* test2_schema.json in Resources */,
+				BE1610051519CCF800FDEDE5 /* test2_valid_1.json in Resources */,
+				BEA331FD153664F200EE8D2D /* test2_invalid_1.json in Resources */,
+				BEA33223153675F300EE8D2D /* csv_CR.csv in Resources */,
+				BEA33224153675F300EE8D2D /* csv_CRLF.csv in Resources */,
+				BEA33225153675F300EE8D2D /* csv_LF.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,10 +613,13 @@
 				57D66C9014D90EA7004B3759 /* FTNSObject+Tag.m in Sources */,
 				57D66C9514D90F47004B3759 /* FTCSVParser.m in Sources */,
 				BE02556C150601A70068D91D /* FTKeychain.m in Sources */,
-				BE931E9815132B5B00A819D5 /* FTCFAutorelease.m in Sources */,
-				57961CE715196C2E00C69AB8 /* FTNSHTTPCookieStorage+Delete.m in Sources */,
-				BE12C6AC15204E160022E15A /* FTWeakDelegateProxy.m in Sources */,
-				BE853F2D1523F1B80051A539 /* FTNSBlockOperation+SelfReference.m in Sources */,
+				BE5265F3151069AD00C4C909 /* FTJSONSchemaValidator.m in Sources */,
+				BE99B2831536BF9700904355 /* FTCFAutorelease.m in Sources */,
+				BE99B2851536BF9700904355 /* FTNSBlockOperation+SelfReference.m in Sources */,
+				BE99B2871536BF9700904355 /* FTNSHTTPCookieStorage+Delete.m in Sources */,
+				BE99B2891536BF9700904355 /* FTWeakDelegateProxy.m in Sources */,
+				BE7DD6B1154645A000C6D97F /* NSFileManager+Utilities.m in Sources */,
+				57EF27A31551108200C01032 /* FTOAuth10.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +634,8 @@
 				57B32C4114C6AC6200C39CA2 /* FTMD5Test.m in Sources */,
 				57B32C4414C6AD0B00C39CA2 /* FTSHA1Test.m in Sources */,
 				57B32C5014C6B09400C39CA2 /* FTNSDataCryptoTest.m in Sources */,
+				BE5265E51510673600C4C909 /* FTJSONSchemaTest.m in Sources */,
+				BEA332291536760B00EE8D2D /* FTCSVParserTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
