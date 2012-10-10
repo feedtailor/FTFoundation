@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57574F1515AAA126008EDA17 /* FTNSString+KeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 57574F1315AAA126008EDA17 /* FTNSString+KeyValue.h */; };
+		57574F1615AAA126008EDA17 /* FTNSString+KeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57574F1415AAA126008EDA17 /* FTNSString+KeyValue.m */; };
+		57574F1A15AAA22C008EDA17 /* FTNSStringKeyValueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57574F1915AAA22C008EDA17 /* FTNSStringKeyValueTest.m */; };
 		57A47BAA14C80A7D0004A13A /* FTCharacterEncodingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A47BA614C80A7D0004A13A /* FTCharacterEncodingTool.h */; };
 		57A47BAB14C80A7D0004A13A /* FTCharacterEncodingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A47BA714C80A7D0004A13A /* FTCharacterEncodingTool.m */; };
 		57A47BB314C80C300004A13A /* FTNSData+GZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A47BB114C80C300004A13A /* FTNSData+GZip.h */; };
@@ -66,6 +69,8 @@
 		BE02556C150601A70068D91D /* FTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BE02556A150601A70068D91D /* FTKeychain.m */; };
 		BE1610041519CCF800FDEDE5 /* test2_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610021519CCF700FDEDE5 /* test2_schema.json */; };
 		BE1610051519CCF800FDEDE5 /* test2_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610031519CCF800FDEDE5 /* test2_valid_1.json */; };
+		BE45254915DE2CC400D68483 /* FTNSObject+TypeCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = BE45254715DE2CC400D68483 /* FTNSObject+TypeCheck.h */; };
+		BE45254A15DE2CC400D68483 /* FTNSObject+TypeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = BE45254815DE2CC400D68483 /* FTNSObject+TypeCheck.m */; };
 		BE5265E51510673600C4C909 /* FTJSONSchemaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */; };
 		BE5265EC1510695600C4C909 /* test1_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265E91510695600C4C909 /* test1_invalid_1.json */; };
 		BE5265ED1510695600C4C909 /* test1_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EA1510695600C4C909 /* test1_schema.json */; };
@@ -88,6 +93,11 @@
 		BEA33224153675F300EE8D2D /* csv_CRLF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33221153675F300EE8D2D /* csv_CRLF.csv */; };
 		BEA33225153675F300EE8D2D /* csv_LF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33222153675F300EE8D2D /* csv_LF.csv */; };
 		BEA332291536760B00EE8D2D /* FTCSVParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA332281536760B00EE8D2D /* FTCSVParserTest.m */; };
+		BEABD97615CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = BEABD97415CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.h */; };
+		BEABD97715CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = BEABD97515CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m */; };
+		BEABD97B15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */; };
+		F0EB598E159D70A600D5654C /* FTNetworkInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F0EB598C159D70A600D5654C /* FTNetworkInterface.h */; };
+		F0EB598F159D70A600D5654C /* FTNetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EB598D159D70A600D5654C /* FTNetworkInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +112,10 @@
 
 /* Begin PBXFileReference section */
 		572582D514C902C600ACB4B5 /* FTFoundationTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FTFoundationTest.xcconfig; sourceTree = "<group>"; };
+		57574F1315AAA126008EDA17 /* FTNSString+KeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSString+KeyValue.h"; sourceTree = "<group>"; };
+		57574F1415AAA126008EDA17 /* FTNSString+KeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSString+KeyValue.m"; sourceTree = "<group>"; };
+		57574F1815AAA22C008EDA17 /* FTNSStringKeyValueTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNSStringKeyValueTest.h; sourceTree = "<group>"; };
+		57574F1915AAA22C008EDA17 /* FTNSStringKeyValueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNSStringKeyValueTest.m; sourceTree = "<group>"; };
 		57A47BA614C80A7D0004A13A /* FTCharacterEncodingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCharacterEncodingTool.h; sourceTree = "<group>"; };
 		57A47BA714C80A7D0004A13A /* FTCharacterEncodingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCharacterEncodingTool.m; sourceTree = "<group>"; };
 		57A47BB114C80C300004A13A /* FTNSData+GZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSData+GZip.h"; sourceTree = "<group>"; };
@@ -173,6 +187,8 @@
 		BE02556A150601A70068D91D /* FTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTKeychain.m; sourceTree = "<group>"; };
 		BE1610021519CCF700FDEDE5 /* test2_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_schema.json; sourceTree = "<group>"; };
 		BE1610031519CCF800FDEDE5 /* test2_valid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_valid_1.json; sourceTree = "<group>"; };
+		BE45254715DE2CC400D68483 /* FTNSObject+TypeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSObject+TypeCheck.h"; sourceTree = "<group>"; };
+		BE45254815DE2CC400D68483 /* FTNSObject+TypeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSObject+TypeCheck.m"; sourceTree = "<group>"; };
 		BE5265E31510673600C4C909 /* FTJSONSchemaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTJSONSchemaTest.h; sourceTree = "<group>"; };
 		BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTJSONSchemaTest.m; sourceTree = "<group>"; };
 		BE5265E91510695600C4C909 /* test1_invalid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_invalid_1.json; sourceTree = "<group>"; };
@@ -197,6 +213,12 @@
 		BEA33222153675F300EE8D2D /* csv_LF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csv_LF.csv; sourceTree = "<group>"; };
 		BEA332271536760B00EE8D2D /* FTCSVParserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCSVParserTest.h; sourceTree = "<group>"; };
 		BEA332281536760B00EE8D2D /* FTCSVParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCSVParserTest.m; sourceTree = "<group>"; };
+		BEABD97415CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSDictionary+TypeCheckKeyPath.h"; sourceTree = "<group>"; };
+		BEABD97515CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSDictionary+TypeCheckKeyPath.m"; sourceTree = "<group>"; };
+		BEABD97915CA58E3003E5C73 /* FTTypeCheckKeyPathTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTypeCheckKeyPathTest.h; sourceTree = "<group>"; };
+		BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTypeCheckKeyPathTest.m; sourceTree = "<group>"; };
+		F0EB598C159D70A600D5654C /* FTNetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNetworkInterface.h; sourceTree = "<group>"; };
+		F0EB598D159D70A600D5654C /* FTNetworkInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNetworkInterface.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,13 +264,19 @@
 				57A47BC914C80DD50004A13A /* FTNSUserDefaults+Ex.m */,
 				57A47BCC14C80E9D0004A13A /* FTNSURL+Query.h */,
 				57A47BCD14C80E9D0004A13A /* FTNSURL+Query.m */,
+				F0EB598C159D70A600D5654C /* FTNetworkInterface.h */,
+				F0EB598D159D70A600D5654C /* FTNetworkInterface.m */,
 				57A47BD214C8118A0004A13A /* FTNetworkStatus.h */,
 				57A47BD314C8118A0004A13A /* FTNetworkStatus.m */,
 				57D66C8D14D90EA6004B3759 /* FTNSObject+Tag.h */,
 				57D66C8E14D90EA7004B3759 /* FTNSObject+Tag.m */,
 				57D66C9214D90F47004B3759 /* FTCSVParser.h */,
 				57D66C9314D90F47004B3759 /* FTCSVParser.m */,
+				BE45254715DE2CC400D68483 /* FTNSObject+TypeCheck.h */,
+				BE45254815DE2CC400D68483 /* FTNSObject+TypeCheck.m */,
 				57A8E92B15008EE4006493E4 /* FTMacros.h */,
+				BEABD97415CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.h */,
+				BEABD97515CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -316,6 +344,8 @@
 				57B32BF214C68BE700C39CA2 /* FTNSString+UUID.m */,
 				57B32BF514C68C3500C39CA2 /* FTNSString+UTI.h */,
 				57B32BF614C68C3500C39CA2 /* FTNSString+UTI.m */,
+				57574F1315AAA126008EDA17 /* FTNSString+KeyValue.h */,
+				57574F1415AAA126008EDA17 /* FTNSString+KeyValue.m */,
 			);
 			name = String;
 			sourceTree = "<group>";
@@ -346,6 +376,8 @@
 				57B32C2814C697F200C39CA2 /* FTNSStringEncodeTest.m */,
 				57B32C2F14C6A69200C39CA2 /* FTNSStringDataLengthTest.h */,
 				57B32C3014C6A69200C39CA2 /* FTNSStringDataLengthTest.m */,
+				57574F1815AAA22C008EDA17 /* FTNSStringKeyValueTest.h */,
+				57574F1915AAA22C008EDA17 /* FTNSStringKeyValueTest.m */,
 				57B32C3214C6A7C400C39CA2 /* FTBase64Test.h */,
 				57B32C3314C6A7C400C39CA2 /* FTBase64Test.m */,
 				57B32C3C14C6ABAB00C39CA2 /* FTCRCTest.h */,
@@ -360,6 +392,8 @@
 				BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */,
 				BEA332271536760B00EE8D2D /* FTCSVParserTest.h */,
 				BEA332281536760B00EE8D2D /* FTCSVParserTest.m */,
+				BEABD97915CA58E3003E5C73 /* FTTypeCheckKeyPathTest.h */,
+				BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */,
 				BE5265E71510692B00C4C909 /* Test Data */,
 				57B32C1B14C695A600C39CA2 /* Supporting Files */,
 				57B32C3B14C6AB6400C39CA2 /* Common.h */,
@@ -482,6 +516,10 @@
 				BE7DD6B0154645A000C6D97F /* NSFileManager+Utilities.h in Headers */,
 				57EF27A21551108200C01032 /* FTOAuth10.h in Headers */,
 				BE8F4254155CE69900881DE8 /* FTFoundation.h in Headers */,
+				F0EB598E159D70A600D5654C /* FTNetworkInterface.h in Headers */,
+				57574F1515AAA126008EDA17 /* FTNSString+KeyValue.h in Headers */,
+				BEABD97615CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.h in Headers */,
+				BE45254915DE2CC400D68483 /* FTNSObject+TypeCheck.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +658,10 @@
 				BE99B2891536BF9700904355 /* FTWeakDelegateProxy.m in Sources */,
 				BE7DD6B1154645A000C6D97F /* NSFileManager+Utilities.m in Sources */,
 				57EF27A31551108200C01032 /* FTOAuth10.m in Sources */,
+				F0EB598F159D70A600D5654C /* FTNetworkInterface.m in Sources */,
+				57574F1615AAA126008EDA17 /* FTNSString+KeyValue.m in Sources */,
+				BEABD97715CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m in Sources */,
+				BE45254A15DE2CC400D68483 /* FTNSObject+TypeCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +678,8 @@
 				57B32C5014C6B09400C39CA2 /* FTNSDataCryptoTest.m in Sources */,
 				BE5265E51510673600C4C909 /* FTJSONSchemaTest.m in Sources */,
 				BEA332291536760B00EE8D2D /* FTCSVParserTest.m in Sources */,
+				57574F1A15AAA22C008EDA17 /* FTNSStringKeyValueTest.m in Sources */,
+				BEABD97B15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

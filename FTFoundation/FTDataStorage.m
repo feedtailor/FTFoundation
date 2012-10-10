@@ -249,12 +249,12 @@ static FTDataStorage* s_self = nil;
     NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
 		if (basePath) {
 			basePath = [basePath stringByAppendingPathComponent:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]];
-			NSFileManager* manager = [NSFileManager defaultManager];
+			NSFileManager* manager = [[NSFileManager alloc] init];
 			if (![manager fileExistsAtPath:basePath]) {
-				[manager createDirectoryAtPath:basePath attributes:nil];
+				[manager createDirectoryAtPath:basePath withIntermediateDirectories:YES attributes:nil error:nil];
 			}
 		}
-	applicationDocumentsDirectory = [basePath retain];
+	applicationDocumentsDirectory = basePath;
 #endif
 	}
 	return applicationDocumentsDirectory;

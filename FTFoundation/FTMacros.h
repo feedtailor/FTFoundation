@@ -17,4 +17,34 @@
 #define FT_LOCALIZED(__str__)					NSLocalizedString((__str__), @"")
 #define FT_LOCALIZED_TABLE(__str__, __table__)	NSLocalizedStringFromTable((__str__), (__table__), @"")
 
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 60000
+
+#if __has_feature(objc_subscripting)
+@interface NSArray (_FT_XCODE44_)
+- (id)objectAtIndexedSubscript:(NSUInteger)idx;
+@end
+
+@interface NSMutableArray (_FT_XCODE44_)
+- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx;
+@end
+
+@interface NSDictionary (_FT_XCODE44_)
+- (id)objectForKeyedSubscript:(id)key;
+@end
+
+@interface NSMutableDictionary (_FT_XCODE44_)
+- (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key;
+@end
+#endif
+
+#if __has_feature(objc_bool)
+#undef YES
+#undef NO
+#define YES __objc_yes
+#define NO  __objc_no
+#endif
+
+#endif
+
 #endif
