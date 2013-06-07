@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = 'FTFoundation'
   s.version       = '1.3.0'
-  s.summary       = 'Feedtailor's extension to Foundation framework.'
+  s.summary       = "Feedtailor's extension to Foundation framework."
   s.homepage      = 'https://github.com/feedtailor/FTFoundation'
   s.license       = 'BSD'
   s.authors       = 'feedtailor Inc.'
