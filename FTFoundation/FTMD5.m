@@ -5,7 +5,7 @@
 #import "FTMD5.h"
 #import <CommonCrypto/CommonDigest.h>
 
-static NSString* ft_md5HashString(unsigned char* inBuf, unsigned int inLen)
+static NSString* ft_md5HashString(unsigned char* inBuf, uint32_t inLen)
 {
 	unsigned char md[CC_MD5_DIGEST_LENGTH];
 	CC_MD5(inBuf, inLen, md);
@@ -55,7 +55,8 @@ static NSData* ft_md5HashData(unsigned char* inBuf, unsigned int inLen)
 
 -(void) addBytes:(const void*)bytes length:(NSUInteger)length
 {
-	CC_MD5_Update((CC_MD5_CTX*)context, bytes, length);
+	NSParameterAssert(length <= UINT_MAX);
+	CC_MD5_Update((CC_MD5_CTX*)context, bytes, (uint32_t)length);
 }
 
 -(void) __createBufferIfNeeded
@@ -104,12 +105,14 @@ static NSData* ft_md5HashData(unsigned char* inBuf, unsigned int inLen)
 
 -(NSString*) ft_md5HashString
 {
-	return ft_md5HashString((unsigned char*)[self bytes], [self length]);
+	NSParameterAssert([self length] <= UINT_MAX);
+	return ft_md5HashString((unsigned char*)[self bytes], (uint32_t)[self length]);
 }
 
 -(NSData*) ft_md5HashData
 {
-	return ft_md5HashData((unsigned char*)[self bytes], [self length]);
+	NSParameterAssert([self length] <= UINT_MAX);
+	return ft_md5HashData((unsigned char*)[self bytes], (uint32_t)[self length]);
 }
 
 @end
