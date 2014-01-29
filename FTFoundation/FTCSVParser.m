@@ -33,9 +33,13 @@ static const unichar QUOTE = '\"';
 {
 	NSUInteger index = NSNotFound;
 
-	for(int i = [string length] - 1; 0 <= i; i--) {
+	for(NSUInteger i = [string length] - 1; ; i--) {
 		if(![set characterIsMember:[string characterAtIndex:i]]) {
 			index = i+1;
+			break;
+		}
+		
+		if (i == 0) {
 			break;
 		}
 	}
@@ -51,7 +55,7 @@ static const unichar QUOTE = '\"';
 {
 	NSMutableArray *columns = [NSMutableArray array];
 
-	int length = [line length];
+	NSUInteger length = [line length];
 	
 	ParseState state = ParseStateColumnStart;
 	NSMutableString *columnBuffer = [NSMutableString string];
@@ -129,8 +133,8 @@ static const unichar QUOTE = '\"';
 
 - (NSArray *)rowsWithSkipInvalidRow:(BOOL)skipInvalidRow
 {
-	int numberOfLines, index;
-	int stringLength = [_csvString length];
+	NSUInteger numberOfLines, index;
+	NSUInteger stringLength = [_csvString length];
 	NSMutableArray *lines = [NSMutableArray array];
 
 	for(index = 0, numberOfLines = 0; index < stringLength; numberOfLines++) {
