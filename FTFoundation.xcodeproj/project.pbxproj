@@ -20,7 +20,6 @@
 		57B32C5014C6B09400C39CA2 /* FTNSDataCryptoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C4F14C6B09400C39CA2 /* FTNSDataCryptoTest.m */; };
 		BE1610041519CCF800FDEDE5 /* test2_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610021519CCF700FDEDE5 /* test2_schema.json */; };
 		BE1610051519CCF800FDEDE5 /* test2_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610031519CCF800FDEDE5 /* test2_valid_1.json */; };
-		BE5265E51510673600C4C909 /* FTJSONSchemaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */; };
 		BE5265EC1510695600C4C909 /* test1_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265E91510695600C4C909 /* test1_invalid_1.json */; };
 		BE5265ED1510695600C4C909 /* test1_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EA1510695600C4C909 /* test1_schema.json */; };
 		BE5265EE1510695600C4C909 /* test1_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EB1510695600C4C909 /* test1_valid_1.json */; };
@@ -51,7 +50,6 @@
 		BEF5C2DB1761A161002B59C1 /* FTOAuth10.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF27A11551108200C01032 /* FTOAuth10.m */; };
 		BEF5C2DC1761A161002B59C1 /* FTDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A47BD114C8118A0004A13A /* FTDataStorage.m */; };
 		BEF5C2DD1761A161002B59C1 /* FTNSManagedObjectContext+Save.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C8914D90E5E004B3759 /* FTNSManagedObjectContext+Save.m */; };
-		BEF5C2DE1761A161002B59C1 /* FTJSONSchemaValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265F1151069AD00C4C909 /* FTJSONSchemaValidator.m */; };
 		BEF5C2DF1761A161002B59C1 /* NSFileManager+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */; };
 		BEF5C2E01761A161002B59C1 /* FTCFAutorelease.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99B27B1536BF9600904355 /* FTCFAutorelease.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BEF5C2E11761A161002B59C1 /* FTNSBlockOperation+SelfReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99B27D1536BF9600904355 /* FTNSBlockOperation+SelfReference.m */; };
@@ -147,12 +145,9 @@
 		BE45254715DE2CC400D68483 /* FTNSObject+TypeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSObject+TypeCheck.h"; sourceTree = "<group>"; };
 		BE45254815DE2CC400D68483 /* FTNSObject+TypeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSObject+TypeCheck.m"; sourceTree = "<group>"; };
 		BE5265E31510673600C4C909 /* FTJSONSchemaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTJSONSchemaTest.h; sourceTree = "<group>"; };
-		BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTJSONSchemaTest.m; sourceTree = "<group>"; };
 		BE5265E91510695600C4C909 /* test1_invalid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_invalid_1.json; sourceTree = "<group>"; };
 		BE5265EA1510695600C4C909 /* test1_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_schema.json; sourceTree = "<group>"; };
 		BE5265EB1510695600C4C909 /* test1_valid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_valid_1.json; sourceTree = "<group>"; };
-		BE5265F0151069AD00C4C909 /* FTJSONSchemaValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTJSONSchemaValidator.h; sourceTree = "<group>"; };
-		BE5265F1151069AD00C4C909 /* FTJSONSchemaValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTJSONSchemaValidator.m; sourceTree = "<group>"; };
 		BE7DD6AE154645A000C6D97F /* NSFileManager+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utilities.h"; sourceTree = "<group>"; };
 		BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utilities.m"; sourceTree = "<group>"; };
 		BE8F4253155CE69900881DE8 /* FTFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFoundation.h; sourceTree = "<group>"; };
@@ -281,7 +276,6 @@
 				57B32C4D14C6B05F00C39CA2 /* Data */,
 				57B32C0E14C694CC00C39CA2 /* Code */,
 				57D66C9114D90F1F004B3759 /* CoreData */,
-				BE5265EF1510697D00C4C909 /* JSON */,
 				57A47BAD14C80A820004A13A /* Other */,
 				57B32BB714C6850000C39CA2 /* Supporting Files */,
 			);
@@ -353,7 +347,6 @@
 				57B32C4E14C6B09400C39CA2 /* FTNSDataCryptoTest.h */,
 				57B32C4F14C6B09400C39CA2 /* FTNSDataCryptoTest.m */,
 				BE5265E31510673600C4C909 /* FTJSONSchemaTest.h */,
-				BE5265E41510673600C4C909 /* FTJSONSchemaTest.m */,
 				BEA332271536760B00EE8D2D /* FTCSVParserTest.h */,
 				BEA332281536760B00EE8D2D /* FTCSVParserTest.m */,
 				BEABD97915CA58E3003E5C73 /* FTTypeCheckKeyPathTest.h */,
@@ -420,15 +413,6 @@
 			);
 			name = JSONSchema;
 			path = TestData/JSONSchema;
-			sourceTree = "<group>";
-		};
-		BE5265EF1510697D00C4C909 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				BE5265F0151069AD00C4C909 /* FTJSONSchemaValidator.h */,
-				BE5265F1151069AD00C4C909 /* FTJSONSchemaValidator.m */,
-			);
-			name = JSON;
 			sourceTree = "<group>";
 		};
 		BEA3321F153675F300EE8D2D /* CSV */ = {
@@ -537,7 +521,6 @@
 				57B32C4114C6AC6200C39CA2 /* FTMD5Test.m in Sources */,
 				57B32C4414C6AD0B00C39CA2 /* FTSHA1Test.m in Sources */,
 				57B32C5014C6B09400C39CA2 /* FTNSDataCryptoTest.m in Sources */,
-				BE5265E51510673600C4C909 /* FTJSONSchemaTest.m in Sources */,
 				BEA332291536760B00EE8D2D /* FTCSVParserTest.m in Sources */,
 				57574F1A15AAA22C008EDA17 /* FTNSStringKeyValueTest.m in Sources */,
 				BEABD97B15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m in Sources */,
@@ -557,7 +540,6 @@
 				BEF5C2DB1761A161002B59C1 /* FTOAuth10.m in Sources */,
 				BEF5C2DC1761A161002B59C1 /* FTDataStorage.m in Sources */,
 				BEF5C2DD1761A161002B59C1 /* FTNSManagedObjectContext+Save.m in Sources */,
-				BEF5C2DE1761A161002B59C1 /* FTJSONSchemaValidator.m in Sources */,
 				BEF5C2DF1761A161002B59C1 /* NSFileManager+Utilities.m in Sources */,
 				BEF5C2E01761A161002B59C1 /* FTCFAutorelease.m in Sources */,
 				BEF5C2E11761A161002B59C1 /* FTNSBlockOperation+SelfReference.m in Sources */,
