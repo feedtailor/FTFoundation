@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.homepage      = 'https://github.com/feedtailor/FTFoundation'
   s.license       = 'BSD'
   s.authors       = 'feedtailor Inc.'
-  s.source        = { :git => 'https://github.com/feedtailor/FTFoundation.git' , :tag => 'v1.3.1' }
+  s.source        = { :git => 'https://github.com/feedtailor/FTFoundation.git' , :tag => 'v1.3.2' }
 
-  s.platform      = :ios, '5.0'
+  s.platform      = :ios, '6.0'
   s.source_files  = 'FTFoundation'
   s.exclude_files = 'FTFoundation/FTCFAutorelease.{h,m}'
 
