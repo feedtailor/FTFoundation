@@ -51,7 +51,8 @@ static inline int __ft_check(const char *buf, int len)
 -(NSData*) ft_inflatedData
 {
 	const char* inBuf = [self bytes];
-	unsigned int inLen = [self length];
+	NSParameterAssert([self length] <= INT_MAX);
+	int inLen = (int)[self length];
 	
 	int ret =  __ft_check(inBuf, inLen);
 	if (ret >= 0) {
