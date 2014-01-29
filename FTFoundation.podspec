@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name          = 'FTFoundation'
-  s.version       = '1.3.3'
+  s.version       = '2.0.0'
   s.summary       = "Feedtailor's extension to Foundation framework."
   s.homepage      = 'https://github.com/feedtailor/FTFoundation'
   s.license       = 'BSD'
   s.authors       = 'feedtailor Inc.'
-  s.source        = { :git => 'https://github.com/feedtailor/FTFoundation.git' , :tag => 'v1.3.3' }
+  s.source        = { :git => 'https://github.com/feedtailor/FTFoundation.git' , :tag => 'v2.0.0' }
 
   s.platform      = :ios, '6.0'
   s.source_files  = 'FTFoundation'
