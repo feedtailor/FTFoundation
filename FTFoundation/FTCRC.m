@@ -5,7 +5,7 @@
 #import "FTCRC.h"
 
 /* Table of CRCs of all 8-bit messages. */
-static unsigned long ft_crc_table[256];
+static uint32_t ft_crc_table[256];
 
 /* Flag: has the table been computed? Initially false. */
 static int ft_crc_table_computed = 0;
@@ -13,10 +13,10 @@ static int ft_crc_table_computed = 0;
 /* Make the table for a fast CRC. */
 static void ft_make_crc_table(void)
 {
-	unsigned long c;
+	uint32_t c;
 	int n, k;
 	for (n = 0; n < 256; n++) {
-		c = (unsigned long) n;
+		c = (uint32_t) n;
 		for (k = 0; k < 8; k++) {
 			if (c & 1) {
 				c = 0xedb88320L ^ (c >> 1);
@@ -42,10 +42,9 @@ static void ft_make_crc_table(void)
  }
  if (crc != original_crc) error();
  */
-static unsigned long ft_update_crc(unsigned long crc,
-								unsigned char *buf, int len)
+static uint32_t ft_update_crc(uint32_t crc, unsigned char *buf, uint32_t len)
 {
-	unsigned long c = crc ^ 0xffffffffL;
+	uint32_t c = crc ^ 0xffffffffU;
 	int n;
 	
 	if (!ft_crc_table_computed)
@@ -53,7 +52,7 @@ static unsigned long ft_update_crc(unsigned long crc,
 	for (n = 0; n < len; n++) {
 		c = ft_crc_table[(c ^ buf[n]) & 0xff] ^ (c >> 8);
 	}
-	return c ^ 0xffffffffL;
+	return c ^ 0xffffffffU;
 }
 
 @implementation FTCRC
@@ -85,7 +84,9 @@ static unsigned long ft_update_crc(unsigned long crc,
 
 -(UInt32) ft_CRC
 {
-	return ft_update_crc(0L, (unsigned char*)[self bytes], [self length]);
+	NSParameterAssert([self length] <= UINT_MAX);
+	uint32_t length = (uint32_t)[self length];
+	return ft_update_crc(0L, (unsigned char*)[self bytes], length);
 }
 
 @end
