@@ -10,7 +10,7 @@ typedef NSString*(^_FTCharacterEncodingTool)(NSStringEncoding encoding);
 
 @synthesize locale;
 
-static CFStringEncodings s_encodingTbl[] = {
+static CFStringEncoding s_encodingTbl[] = {
     kCFStringEncodingShiftJIS, // Japanese (Shift JIS)
     kCFStringEncodingEUC_JP, // Japanese (EUC)
 	
@@ -66,7 +66,7 @@ static CFStringEncodings s_encodingTbl[] = {
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_ja[] = {
+static CFStringEncoding s_encodingTbl_ja[] = {
 	kCFStringEncodingShiftJIS, // Japanese (Shift JIS)
     kCFStringEncodingEUC_JP, // Japanese (EUC)
     kCFStringEncodingDOSJapanese, // Japanese (Windows, DOS)
@@ -77,7 +77,7 @@ static CFStringEncodings s_encodingTbl_ja[] = {
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_ko[] = {
+static CFStringEncoding s_encodingTbl_ko[] = {
     kCFStringEncodingMacKorean, // Korean (Mac OS)
     kCFStringEncodingEUC_KR,  // Korean (EUC)
     kCFStringEncodingDOSKorean,  // Korean (Windows, DOS)
@@ -85,7 +85,7 @@ static CFStringEncodings s_encodingTbl_ko[] = {
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_zh[] = {
+static CFStringEncoding s_encodingTbl_zh[] = {
 	kCFStringEncodingMacChineseTrad, // Traditional Chinese (Mac OS)
     kCFStringEncodingMacChineseSimp, // Simplified Chinese (Mac OS)
     kCFStringEncodingEUC_TW,  // Traditional Chinese (EUC)
@@ -96,33 +96,33 @@ static CFStringEncodings s_encodingTbl_zh[] = {
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_el[] = {
+static CFStringEncoding s_encodingTbl_el[] = {
     kCFStringEncodingMacGreek, // Greek (Mac OS)
     kCFStringEncodingISOLatinGreek, // Greek (ISO 8859-7)
 
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_ar[] = {
+static CFStringEncoding s_encodingTbl_ar[] = {
     kCFStringEncodingMacArabic, // Arabic (Mac OS)
 
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_he[] = {
+static CFStringEncoding s_encodingTbl_he[] = {
     kCFStringEncodingMacHebrew, // Hebrew (Mac OS)
 
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_tr[] = {
+static CFStringEncoding s_encodingTbl_tr[] = {
     kCFStringEncodingMacTurkish, // Turkish (Mac OS)
     kCFStringEncodingISOLatin5, // Turkish (ISO Latin 5)
 
 	kCFStringEncodingInvalidId,
 };
 
-static CFStringEncodings s_encodingTbl_is[] = {
+static CFStringEncoding s_encodingTbl_is[] = {
     kCFStringEncodingMacIcelandic, // Icelandic (Mac OS)
 
 	kCFStringEncodingInvalidId,
@@ -139,7 +139,7 @@ static CFStringEncodings s_encodingTbl_is[] = {
 	self.locale = nil;
 }
 
-static CFStringEncodings* __encodingsTableWithLaunguageCode(NSString* langCode)
+static CFStringEncoding* __encodingsTableWithLaunguageCode(NSString* langCode)
 {
 	langCode = [langCode lowercaseString];
 	if ([langCode isEqualToString:@"ja"]) {
@@ -168,10 +168,10 @@ static CFStringEncodings* __encodingsTableWithLaunguageCode(NSString* langCode)
 		self.locale = [NSLocale currentLocale];
 	}
 		
-	CFStringEncodings* tbl = __encodingsTableWithLaunguageCode([self.locale objectForKey:NSLocaleLanguageCode]);
+	CFStringEncoding* tbl = __encodingsTableWithLaunguageCode([self.locale objectForKey:NSLocaleLanguageCode]);
 	if (tbl) {
 		for (int i = 0; ; i++) {
-			CFStringEncodings cfEnc = tbl[i];
+			CFStringEncoding cfEnc = tbl[i];
 			if (cfEnc == kCFStringEncodingInvalidId) {
 				break;
 			}
@@ -187,7 +187,7 @@ static CFStringEncodings* __encodingsTableWithLaunguageCode(NSString* langCode)
 	}
 	
 	for (int i = 0; ; i++) {
-		CFStringEncodings cfEnc = s_encodingTbl[i];
+		CFStringEncoding cfEnc = s_encodingTbl[i];
 		if (cfEnc == kCFStringEncodingInvalidId) {
 			break;
 		}
