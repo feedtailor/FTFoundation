@@ -62,17 +62,17 @@ typedef struct ft_SHA1Context
 /*
  *  Function Prototypes
  */
-int ft_SHA1Reset(  ft_SHA1Context *);
-int ft_SHA1Input(  ft_SHA1Context *,
+static int ft_SHA1Reset(  ft_SHA1Context *);
+static int ft_SHA1Input(  ft_SHA1Context *,
 			  const uint8_t *,
-			  unsigned int);
-int ft_SHA1Result( ft_SHA1Context *,
+			  NSUInteger);
+static int ft_SHA1Result( ft_SHA1Context *,
 			   uint8_t Message_Digest[FTSHA1_SHA1HashSize]);
 #endif
 
 #pragma mark -
 
-static void ft_sha1sum(uint8_t* buf, unsigned int length, uint8_t result[FTSHA1_SHA1HashSize]) 
+static void ft_sha1sum(uint8_t* buf, NSUInteger length, uint8_t result[FTSHA1_SHA1HashSize])
 {
 	ft_SHA1Context sha1;
 	ft_SHA1Reset(&sha1);
@@ -222,8 +222,8 @@ static void ft_sha1sum(uint8_t* buf, unsigned int length, uint8_t result[FTSHA1_
 #define SHA1CircularShift(bits,word) \
 (((word) << (bits)) | ((word) >> (32-(bits))))
 /* Local Function Prototyptes */
-void SHA1PadMessage(ft_SHA1Context *);
-void SHA1ProcessMessageBlock(ft_SHA1Context *);
+static void SHA1PadMessage(ft_SHA1Context *);
+static void SHA1ProcessMessageBlock(ft_SHA1Context *);
 /*
  *  ft_SHA1Reset
  *
@@ -239,7 +239,7 @@ void SHA1ProcessMessageBlock(ft_SHA1Context *);
  *      sha Error Code.
  *
  */
-int ft_SHA1Reset(ft_SHA1Context *context)
+static int ft_SHA1Reset(ft_SHA1Context *context)
 {
     if (!context)
     {
@@ -276,7 +276,7 @@ int ft_SHA1Reset(ft_SHA1Context *context)
  *      sha Error Code.
  *
  */
-int ft_SHA1Result( ft_SHA1Context *context,
+static int ft_SHA1Result( ft_SHA1Context *context,
 			   uint8_t Message_Digest[FTSHA1_SHA1HashSize])
 {
     int i;
@@ -327,9 +327,9 @@ int ft_SHA1Result( ft_SHA1Context *context,
  *      sha Error Code.
  *
  */
-int ft_SHA1Input(    ft_SHA1Context    *context,
+static int ft_SHA1Input(ft_SHA1Context    *context,
 			  const uint8_t  *message_array,
-			  unsigned       length)
+			  NSUInteger       length)
 {
     if (!length)
     {
@@ -390,7 +390,7 @@ int ft_SHA1Input(    ft_SHA1Context    *context,
  *
  *
  */
-void SHA1ProcessMessageBlock(ft_SHA1Context *context)
+static void SHA1ProcessMessageBlock(ft_SHA1Context *context)
 {
     const uint32_t K[] =    {       /* Constants defined in SHA-1   */
 		0x5A827999,
@@ -488,7 +488,7 @@ void SHA1ProcessMessageBlock(ft_SHA1Context *context)
  *      Nothing.
  *
  */
-void SHA1PadMessage(ft_SHA1Context *context)
+static void SHA1PadMessage(ft_SHA1Context *context)
 {
     /*
      *  Check to see if the current message block is too small to hold
