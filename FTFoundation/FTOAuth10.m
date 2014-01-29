@@ -16,11 +16,11 @@
 
 +(NSDictionary*) oauthQueriesWithURL:(NSURL*)url httpMethod:(NSString*)method postParams:(NSDictionary*)postParams consumerKey:(NSString*)consumerKey consumerSecret:(NSString*)consumerSecret token:(NSString*)token tokenSecret:(NSString*)tokenSecret
 {
-	unsigned int timestamp = time(NULL);	
+	time_t timestamp = time(NULL);	
 	NSString* nonce = [NSString ft_UUIDString];
 	NSString* link = [NSString stringWithFormat:@"%@://%@%@", [url scheme], [url host], [url path]];
 	NSString* query = [url query];
-	NSString* defaultQuery = [NSString stringWithFormat:@"oauth_consumer_key=%@&oauth_nonce=%@&oauth_signature_method=HMAC-SHA1&oauth_timestamp=%u&oauth_version=1.0", consumerKey, nonce, timestamp];
+	NSString* defaultQuery = [NSString stringWithFormat:@"oauth_consumer_key=%@&oauth_nonce=%@&oauth_signature_method=HMAC-SHA1&oauth_timestamp=%ld&oauth_version=1.0", consumerKey, nonce, timestamp];
 	
 	NSMutableArray* queryArr = [NSMutableArray arrayWithArray:[defaultQuery componentsSeparatedByString:@"&"]];
 	if ([query length] > 0) {
