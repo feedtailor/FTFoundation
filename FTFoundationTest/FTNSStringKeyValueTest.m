@@ -10,7 +10,7 @@
 -(void) __test:(NSString*)original delimiter:(NSString*)delimiter correct:(NSDictionary*)correct
 {
 	NSDictionary* dic = [original ft_keyValueDictionaryWithDelimiter:delimiter];
-	STAssertTrue([dic isEqualToDictionary:correct], @"%@ =\n%@", [dic description], [correct description]);
+	XCTAssertTrue([dic isEqualToDictionary:correct], @"%@ =\n%@", [dic description], [correct description]);
 }
 
 -(void) testKeyValue

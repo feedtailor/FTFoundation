@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		57574F1A15AAA22C008EDA17 /* FTNSStringKeyValueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57574F1915AAA22C008EDA17 /* FTNSStringKeyValueTest.m */; };
-		57B32C1614C695A600C39CA2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B32C1514C695A600C39CA2 /* SenTestingKit.framework */; };
 		57B32C1914C695A600C39CA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B32BB414C6850000C39CA2 /* Foundation.framework */; };
 		57B32C1F14C695A600C39CA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57B32C1D14C695A600C39CA2 /* InfoPlist.strings */; };
 		57B32C2914C697F200C39CA2 /* FTNSStringEncodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C2814C697F200C39CA2 /* FTNSStringEncodeTest.m */; };
@@ -107,8 +106,7 @@
 		57B32C0714C6915E00C39CA2 /* FTSHA1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSHA1.m; sourceTree = "<group>"; };
 		57B32C0A14C6942600C39CA2 /* FTHMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHMAC.h; sourceTree = "<group>"; };
 		57B32C0B14C6942600C39CA2 /* FTHMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHMAC.m; sourceTree = "<group>"; };
-		57B32C1414C695A600C39CA2 /* FTFoundationTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTFoundationTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57B32C1514C695A600C39CA2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		57B32C1414C695A600C39CA2 /* FTFoundationTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTFoundationTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B32C1C14C695A600C39CA2 /* FTFoundationTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTFoundationTest-Info.plist"; sourceTree = "<group>"; };
 		57B32C1E14C695A600C39CA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57B32C2314C695A600C39CA2 /* FTFoundationTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTFoundationTest-Prefix.pch"; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 				BEF5C2C91761A102002B59C1 /* CoreData.framework in Frameworks */,
 				BEF5C2C71761A0FA002B59C1 /* Security.framework in Frameworks */,
 				BEF5C2C51761A0F2002B59C1 /* MobileCoreServices.framework in Frameworks */,
-				57B32C1614C695A600C39CA2 /* SenTestingKit.framework in Frameworks */,
 				57B32C1914C695A600C39CA2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,7 +251,7 @@
 		57B32BB214C6850000C39CA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57B32C1414C695A600C39CA2 /* FTFoundationTest.octest */,
+				57B32C1414C695A600C39CA2 /* FTFoundationTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,7 +266,6 @@
 				BEF5C2C61761A0FA002B59C1 /* Security.framework */,
 				BEF5C2C41761A0F2002B59C1 /* MobileCoreServices.framework */,
 				57B32BB414C6850000C39CA2 /* Foundation.framework */,
-				57B32C1514C695A600C39CA2 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -449,8 +445,8 @@
 			);
 			name = FTFoundationTest;
 			productName = FTFoundationTest;
-			productReference = 57B32C1414C695A600C39CA2 /* FTFoundationTest.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 57B32C1414C695A600C39CA2 /* FTFoundationTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -651,13 +647,12 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FTFoundationTest/FTFoundationTest-Prefix.pch";
 				INFOPLIST_FILE = "FTFoundationTest/FTFoundationTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -667,13 +662,12 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FTFoundationTest/FTFoundationTest-Prefix.pch";
 				INFOPLIST_FILE = "FTFoundationTest/FTFoundationTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

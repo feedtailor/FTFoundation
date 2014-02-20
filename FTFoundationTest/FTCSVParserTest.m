@@ -54,7 +54,7 @@
 	NSArray *parsedRows = [parser rows];
 
 	NSArray *rows = [self rowsWithSkipInvalidRow:YES];
-	STAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
+	XCTAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
 }
 
 - (void)testCRLF
@@ -67,7 +67,7 @@
 	NSArray *parsedRows = [parser rows];
 	
 	NSArray *rows = [self rowsWithSkipInvalidRow:YES];
-	STAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
+	XCTAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
 }
 
 - (void)testCR
@@ -80,7 +80,7 @@
 	NSArray *parsedRows = [parser rows];
 	
 	NSArray *rows = [self rowsWithSkipInvalidRow:YES];
-	STAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
+	XCTAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
 }
 
 - (void)testLFIncludesIllegalLine
@@ -93,7 +93,7 @@
 	NSArray *parsedRows = [parser rowsWithSkipInvalidRow:NO];
 	
 	NSArray *rows = [self rowsWithSkipInvalidRow:NO];
-	STAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
+	XCTAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
 }
 
 - (void)testCRLFIncludesIllegalLine
@@ -106,7 +106,7 @@
 	NSArray *parsedRows = [parser rowsWithSkipInvalidRow:NO];
 	
 	NSArray *rows = [self rowsWithSkipInvalidRow:NO];
-	STAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
+	XCTAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
 }
 
 - (void)testCRIncludesIllegalLine
@@ -119,7 +119,7 @@
 	NSArray *parsedRows = [parser rowsWithSkipInvalidRow:NO];
 	
 	NSArray *rows = [self rowsWithSkipInvalidRow:NO];
-	STAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
+	XCTAssertTrue([parsedRows isEqualToArray:rows],  @"%@ == %@", parsedRows, rows);
 }
 
 @end

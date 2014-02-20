@@ -2,8 +2,8 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface FTNSStringKeyValueTest : SenTestCase
+@interface FTNSStringKeyValueTest : XCTestCase
 
 @end

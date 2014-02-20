@@ -10,13 +10,13 @@
 -(void) __test:(UInt64)length correct:(NSString*)correct
 {
 	NSString* str = [NSString ft_stringWithLength:length];
-	STAssertTrue([str isEqualToString:correct], @"%@ = %@", str, correct);
+	XCTAssertTrue([str isEqualToString:correct], @"%@ = %@", str, correct);
 }
 
 -(void) __testShort:(UInt64)length correct:(NSString*)correct
 {
 	NSString* str = [NSString ft_shortStringWithLength:length];
-	STAssertTrue([str isEqualToString:correct], @"%@ = %@", str, correct);
+	XCTAssertTrue([str isEqualToString:correct], @"%@ = %@", str, correct);
 }
 
 - (void)test

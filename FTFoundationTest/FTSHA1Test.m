@@ -14,10 +14,10 @@
 	NSData* d = [TEST_TEXT dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
 	NSString* encoded = [d ft_sha1HashString];
 	NSString* correct = @"b198a2818170188d5700dc0d20d7fbf042ddc78a";
-	STAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
+	XCTAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
 	
 	encoded = [TEST_TEXT ft_sha1HashString];
-	STAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
+	XCTAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
 }
 
 -(void) testEncode2
@@ -27,7 +27,7 @@
 	[sha1 addData:d];
 	NSString* encoded = [sha1 sha1HashString];
 	NSString* correct = @"b198a2818170188d5700dc0d20d7fbf042ddc78a";
-	STAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
+	XCTAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
 }
 
 @end

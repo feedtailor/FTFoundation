@@ -20,7 +20,7 @@
 	
 	NSString* str = [[NSString alloc] initWithData:decrypted encoding:NSUTF8StringEncoding];
 	
-	STAssertTrue([str isEqualToString:TEST_TEXT], @"%@ = %@", str, TEST_TEXT);
+	XCTAssertTrue([str isEqualToString:TEST_TEXT], @"%@ = %@", str, TEST_TEXT);
 }
 
 - (void)testCrypto2
@@ -34,7 +34,7 @@
 	
 	NSString* str = [[NSString alloc] initWithData:decrypted encoding:NSUTF8StringEncoding];
 	
-	STAssertTrue([str isEqualToString:TEST_TEXT], @"%@ = %@", str, TEST_TEXT);
+	XCTAssertTrue([str isEqualToString:TEST_TEXT], @"%@ = %@", str, TEST_TEXT);
 }
 
 @end

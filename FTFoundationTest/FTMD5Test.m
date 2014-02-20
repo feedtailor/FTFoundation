@@ -14,10 +14,10 @@
 	NSData* d = [TEST_TEXT dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
 	NSString* encoded = [d ft_md5HashString];
 	NSString* correct = @"abf3118241a86cb15adc153f8cb3d85b";
-	STAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
+	XCTAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
 	
 	encoded = [TEST_TEXT ft_md5HashString];
-	STAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
+	XCTAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
 }
 
 -(void) testEncode2
@@ -27,7 +27,7 @@
 	[md5 addData:d];
 	NSString* encoded = [md5 md5HashString];
 	NSString* correct = @"abf3118241a86cb15adc153f8cb3d85b";
-	STAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
+	XCTAssertTrue([encoded isEqualToString:correct], @"%@ = %@", encoded, correct);
 }
 
 @end

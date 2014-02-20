@@ -14,7 +14,7 @@
 	NSData* d = [TEST_TEXT dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
 	UInt32 crc = [d ft_CRC];
 	UInt32 correct = 391512288;
-	STAssertTrue(crc == correct, @"%lu = %lu", crc, correct);
+	XCTAssertTrue(crc == correct, @"%d = %d", (uint32_t)crc, (uint32_t)correct);
 }
 
 @end
