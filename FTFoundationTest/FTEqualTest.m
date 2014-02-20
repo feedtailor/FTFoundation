@@ -3,12 +3,12 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "FTIsEqual.h"
+#import "FTEqual.h"
 
-@interface FTIsEqualTest : XCTestCase
+@interface FTEqualTest : XCTestCase
 @end
 
-@implementation FTIsEqualTest
+@implementation FTEqualTest
 
 - (void)setUp
 {

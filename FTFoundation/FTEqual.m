@@ -2,7 +2,7 @@
 //  Copyright (c) 2014 feedtailor inc. All rights reserved.
 //
 
-#import "FTIsEqual.h"
+#import "FTEqual.h"
 
 BOOL FTIsEqualObjects(id <NSObject> a, id <NSObject> b)
 {
