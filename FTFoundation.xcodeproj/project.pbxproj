@@ -17,6 +17,7 @@
 		57B32C4114C6AC6200C39CA2 /* FTMD5Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C4014C6AC6200C39CA2 /* FTMD5Test.m */; };
 		57B32C4414C6AD0B00C39CA2 /* FTSHA1Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C4314C6AD0B00C39CA2 /* FTSHA1Test.m */; };
 		57B32C5014C6B09400C39CA2 /* FTNSDataCryptoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C4F14C6B09400C39CA2 /* FTNSDataCryptoTest.m */; };
+		BE5A723318B5A57E00134093 /* FTBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5A723218B5A57E00134093 /* FTBlockTimer.m */; };
 		BE6FCD6218B5900B00038B37 /* FTIsEqualTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */; };
 		BEA33223153675F300EE8D2D /* csv_CR.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33220153675F300EE8D2D /* csv_CR.csv */; };
 		BEA33224153675F300EE8D2D /* csv_CRLF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33221153675F300EE8D2D /* csv_CRLF.csv */; };
@@ -128,6 +129,8 @@
 		BE02556A150601A70068D91D /* FTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTKeychain.m; sourceTree = "<group>"; };
 		BE45254715DE2CC400D68483 /* FTNSObject+TypeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSObject+TypeCheck.h"; sourceTree = "<group>"; };
 		BE45254815DE2CC400D68483 /* FTNSObject+TypeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSObject+TypeCheck.m"; sourceTree = "<group>"; };
+		BE5A723118B5A57E00134093 /* FTBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBlockTimer.h; sourceTree = "<group>"; };
+		BE5A723218B5A57E00134093 /* FTBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBlockTimer.m; sourceTree = "<group>"; };
 		BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIsEqualTest.m; sourceTree = "<group>"; };
 		BE7DD6AE154645A000C6D97F /* NSFileManager+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utilities.h"; sourceTree = "<group>"; };
 		BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utilities.m"; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 				BEABD97515CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m */,
 				BEC8613018B5889B00199D02 /* FTIsEqual.h */,
 				BEC8613118B5896D00199D02 /* FTIsEqual.m */,
+				BE5A723118B5A57E00134093 /* FTBlockTimer.h */,
+				BE5A723218B5A57E00134093 /* FTBlockTimer.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 				BEF5C2D71761A161002B59C1 /* FTCRC.m in Sources */,
 				BEF5C2D81761A161002B59C1 /* FTMD5.m in Sources */,
 				BEF5C2D91761A161002B59C1 /* FTSHA1.m in Sources */,
+				BE5A723318B5A57E00134093 /* FTBlockTimer.m in Sources */,
 				BEF5C2DA1761A161002B59C1 /* FTHMAC.m in Sources */,
 				BEF5C2DB1761A161002B59C1 /* FTOAuth10.m in Sources */,
 				BEF5C2DC1761A161002B59C1 /* FTDataStorage.m in Sources */,
