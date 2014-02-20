@@ -29,6 +29,7 @@
 		BEA33225153675F300EE8D2D /* csv_LF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33222153675F300EE8D2D /* csv_LF.csv */; };
 		BEA332291536760B00EE8D2D /* FTCSVParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA332281536760B00EE8D2D /* FTCSVParserTest.m */; };
 		BEABD97B15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */; };
+		BEC8613218B5896D00199D02 /* FTIsEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC8613118B5896D00199D02 /* FTIsEqual.m */; };
 		BEF5C2C51761A0F2002B59C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF5C2C41761A0F2002B59C1 /* MobileCoreServices.framework */; };
 		BEF5C2C71761A0FA002B59C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF5C2C61761A0FA002B59C1 /* Security.framework */; };
 		BEF5C2C91761A102002B59C1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF5C2C81761A102002B59C1 /* CoreData.framework */; };
@@ -169,6 +170,8 @@
 		BEABD97515CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSDictionary+TypeCheckKeyPath.m"; sourceTree = "<group>"; };
 		BEABD97915CA58E3003E5C73 /* FTTypeCheckKeyPathTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTypeCheckKeyPathTest.h; sourceTree = "<group>"; };
 		BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTypeCheckKeyPathTest.m; sourceTree = "<group>"; };
+		BEC8613018B5889B00199D02 /* FTIsEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTIsEqual.h; sourceTree = "<group>"; };
+		BEC8613118B5896D00199D02 /* FTIsEqual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIsEqual.m; sourceTree = "<group>"; };
 		BEF5C2C41761A0F2002B59C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		BEF5C2C61761A0FA002B59C1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BEF5C2C81761A102002B59C1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -232,6 +235,8 @@
 				57A8E92B15008EE4006493E4 /* FTMacros.h */,
 				BEABD97415CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.h */,
 				BEABD97515CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m */,
+				BEC8613018B5889B00199D02 /* FTIsEqual.h */,
+				BEC8613118B5896D00199D02 /* FTIsEqual.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				BEF5C2D31761A161002B59C1 /* FTNSData+Crypto.m in Sources */,
 				BEF5C2D41761A161002B59C1 /* FTNSData+Random.m in Sources */,
 				BEF5C2D51761A161002B59C1 /* FTNSData+GZip.m in Sources */,
+				BEC8613218B5896D00199D02 /* FTIsEqual.m in Sources */,
 				BEF5C2D61761A161002B59C1 /* FTBase64.m in Sources */,
 				BEF5C2D71761A161002B59C1 /* FTCRC.m in Sources */,
 				BEF5C2D81761A161002B59C1 /* FTMD5.m in Sources */,
