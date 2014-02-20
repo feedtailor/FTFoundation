@@ -22,6 +22,7 @@
 		BE5265EC1510695600C4C909 /* test1_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265E91510695600C4C909 /* test1_invalid_1.json */; };
 		BE5265ED1510695600C4C909 /* test1_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EA1510695600C4C909 /* test1_schema.json */; };
 		BE5265EE1510695600C4C909 /* test1_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EB1510695600C4C909 /* test1_valid_1.json */; };
+		BE6FCD6218B5900B00038B37 /* FTIsEqualTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */; };
 		BEA331FD153664F200EE8D2D /* test2_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BEA331FC153664F200EE8D2D /* test2_invalid_1.json */; };
 		BEA33223153675F300EE8D2D /* csv_CR.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33220153675F300EE8D2D /* csv_CR.csv */; };
 		BEA33224153675F300EE8D2D /* csv_CRLF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33221153675F300EE8D2D /* csv_CRLF.csv */; };
@@ -147,6 +148,7 @@
 		BE5265E91510695600C4C909 /* test1_invalid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_invalid_1.json; sourceTree = "<group>"; };
 		BE5265EA1510695600C4C909 /* test1_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_schema.json; sourceTree = "<group>"; };
 		BE5265EB1510695600C4C909 /* test1_valid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_valid_1.json; sourceTree = "<group>"; };
+		BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIsEqualTest.m; sourceTree = "<group>"; };
 		BE7DD6AE154645A000C6D97F /* NSFileManager+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utilities.h"; sourceTree = "<group>"; };
 		BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utilities.m"; sourceTree = "<group>"; };
 		BE8F4253155CE69900881DE8 /* FTFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFoundation.h; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				BEA332281536760B00EE8D2D /* FTCSVParserTest.m */,
 				BEABD97915CA58E3003E5C73 /* FTTypeCheckKeyPathTest.h */,
 				BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */,
+				BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */,
 				BE5265E71510692B00C4C909 /* Test Data */,
 				57B32C1B14C695A600C39CA2 /* Supporting Files */,
 				57B32C3B14C6AB6400C39CA2 /* Common.h */,
@@ -543,6 +546,7 @@
 				BEF5C2DC1761A161002B59C1 /* FTDataStorage.m in Sources */,
 				BEF5C2DD1761A161002B59C1 /* FTNSManagedObjectContext+Save.m in Sources */,
 				BEF5C2DF1761A161002B59C1 /* NSFileManager+Utilities.m in Sources */,
+				BE6FCD6218B5900B00038B37 /* FTIsEqualTest.m in Sources */,
 				BEF5C2E01761A161002B59C1 /* FTCFAutorelease.m in Sources */,
 				BEF5C2E11761A161002B59C1 /* FTNSBlockOperation+SelfReference.m in Sources */,
 				BEF5C2E21761A161002B59C1 /* FTNSHTTPCookieStorage+Delete.m in Sources */,
