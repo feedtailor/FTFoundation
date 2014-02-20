@@ -68,4 +68,56 @@
     XCTAssertTrue(FTIsEqualObjects(a, b));
 }
 
+#pragma mark - CF
+
+- (void)testCFEqualObjects
+{
+    CFTypeRef a = CFSTR("abc");
+    CFTypeRef b = CFSTR("abc");
+    
+    XCTAssertTrue(FTCFEqual(a, b));
+}
+
+- (void)testCFNotEqualObjects
+{
+    CFTypeRef a = CFSTR("abc");
+    CFTypeRef b = CFSTR("xyz");
+    
+    XCTAssertFalse(FTCFEqual(a, b));
+}
+
+- (void)testCFDifferentClassObjects
+{
+    CFTypeRef a = CFDateCreate(kCFAllocatorDefault, CFAbsoluteTimeGetCurrent());
+    CFTypeRef b = CFSTR("xyz");
+
+    XCTAssertFalse(FTCFEqual(a, b));
+
+    CFRelease(a);
+}
+
+- (void)testCFNilAndObject
+{
+    CFTypeRef a = NULL;
+    CFTypeRef b = CFSTR("abc");
+    
+    XCTAssertFalse(FTCFEqual(a, b));
+}
+
+- (void)testCFObjectAndNil
+{
+    CFTypeRef a = CFSTR("abc");
+    CFTypeRef b = NULL;
+    
+    XCTAssertFalse(FTCFEqual(a, b));
+}
+
+- (void)testCFNilAndNil
+{
+    CFTypeRef a = NULL;
+    CFTypeRef b = NULL;
+    
+    XCTAssertTrue(FTCFEqual(a, b));
+}
+
 @end

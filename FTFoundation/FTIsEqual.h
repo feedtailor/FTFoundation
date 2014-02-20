@@ -4,4 +4,5 @@
 
 #import <Foundation/Foundation.h>
 
-BOOL FTIsEqualObjects(id<NSObject> a, id<NSObject> b);
+BOOL FTIsEqualObjects(id <NSObject> a, id <NSObject> b);
+Boolean FTCFEqual(CFTypeRef a, CFTypeRef b);

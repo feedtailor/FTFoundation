@@ -4,7 +4,7 @@
 
 #import "FTIsEqual.h"
 
-BOOL FTIsEqualObjects(id<NSObject> a, id<NSObject> b)
+BOOL FTIsEqualObjects(id <NSObject> a, id <NSObject> b)
 {
     if (a) {
         if (b) {
@@ -17,4 +17,9 @@ BOOL FTIsEqualObjects(id<NSObject> a, id<NSObject> b)
     }
     
     return NO;
+}
+
+Boolean FTCFEqual(CFTypeRef a, CFTypeRef b)
+{
+    return FTIsEqualObjects((__bridge id <NSObject>)a, (__bridge id <NSObject>)b);
 }
