@@ -2,9 +2,12 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTCRCTest.h"
+#import <XCTest/XCTest.h>
 #import "FTCRC.h"
 #import "Common.h"
+
+@interface FTCRCTest : XCTestCase
+@end
 
 @implementation FTCRCTest
 

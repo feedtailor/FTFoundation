@@ -2,9 +2,12 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTBase64Test.h"
+#import <XCTest/XCTest.h>
 #import "FTBase64.h"
 #import "Common.h"
+
+@interface FTBase64Test : XCTestCase
+@end
 
 @implementation FTBase64Test
 

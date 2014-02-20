@@ -2,9 +2,12 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTMD5Test.h"
+#import <XCTest/XCTest.h>
 #import "FTMD5.h"
 #import "Common.h"
+
+@interface FTMD5Test : XCTestCase
+@end
 
 @implementation FTMD5Test
 

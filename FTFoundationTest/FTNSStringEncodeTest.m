@@ -2,8 +2,12 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTNSStringEncodeTest.h"
+
+#import <XCTest/XCTest.h>
 #import "FTNSString+Encode.h"
+
+@interface FTNSStringEncodeTest : XCTestCase
+@end
 
 @implementation FTNSStringEncodeTest
 

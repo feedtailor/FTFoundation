@@ -2,8 +2,11 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTNSStringDataLengthTest.h"
+#import <XCTest/XCTest.h>
 #import "FTNSString+DataLength.h"
+
+@interface FTNSStringDataLengthTest : XCTestCase
+@end
 
 @implementation FTNSStringDataLengthTest
 

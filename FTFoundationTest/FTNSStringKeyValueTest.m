@@ -2,8 +2,11 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTNSStringKeyValueTest.h"
+#import <XCTest/XCTest.h>
 #import "FTNSString+KeyValue.h"
+
+@interface FTNSStringKeyValueTest : XCTestCase
+@end
 
 @implementation FTNSStringKeyValueTest
 

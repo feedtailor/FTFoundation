@@ -17,13 +17,7 @@
 		57B32C4114C6AC6200C39CA2 /* FTMD5Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C4014C6AC6200C39CA2 /* FTMD5Test.m */; };
 		57B32C4414C6AD0B00C39CA2 /* FTSHA1Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C4314C6AD0B00C39CA2 /* FTSHA1Test.m */; };
 		57B32C5014C6B09400C39CA2 /* FTNSDataCryptoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B32C4F14C6B09400C39CA2 /* FTNSDataCryptoTest.m */; };
-		BE1610041519CCF800FDEDE5 /* test2_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610021519CCF700FDEDE5 /* test2_schema.json */; };
-		BE1610051519CCF800FDEDE5 /* test2_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1610031519CCF800FDEDE5 /* test2_valid_1.json */; };
-		BE5265EC1510695600C4C909 /* test1_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265E91510695600C4C909 /* test1_invalid_1.json */; };
-		BE5265ED1510695600C4C909 /* test1_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EA1510695600C4C909 /* test1_schema.json */; };
-		BE5265EE1510695600C4C909 /* test1_valid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BE5265EB1510695600C4C909 /* test1_valid_1.json */; };
 		BE6FCD6218B5900B00038B37 /* FTIsEqualTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */; };
-		BEA331FD153664F200EE8D2D /* test2_invalid_1.json in Resources */ = {isa = PBXBuildFile; fileRef = BEA331FC153664F200EE8D2D /* test2_invalid_1.json */; };
 		BEA33223153675F300EE8D2D /* csv_CR.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33220153675F300EE8D2D /* csv_CR.csv */; };
 		BEA33224153675F300EE8D2D /* csv_CRLF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33221153675F300EE8D2D /* csv_CRLF.csv */; };
 		BEA33225153675F300EE8D2D /* csv_LF.csv in Resources */ = {isa = PBXBuildFile; fileRef = BEA33222153675F300EE8D2D /* csv_LF.csv */; };
@@ -72,7 +66,6 @@
 /* Begin PBXFileReference section */
 		57574F1315AAA126008EDA17 /* FTNSString+KeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSString+KeyValue.h"; sourceTree = "<group>"; };
 		57574F1415AAA126008EDA17 /* FTNSString+KeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSString+KeyValue.m"; sourceTree = "<group>"; };
-		57574F1815AAA22C008EDA17 /* FTNSStringKeyValueTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNSStringKeyValueTest.h; sourceTree = "<group>"; };
 		57574F1915AAA22C008EDA17 /* FTNSStringKeyValueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNSStringKeyValueTest.m; sourceTree = "<group>"; };
 		57A47BA614C80A7D0004A13A /* FTCharacterEncodingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCharacterEncodingTool.h; sourceTree = "<group>"; };
 		57A47BA714C80A7D0004A13A /* FTCharacterEncodingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCharacterEncodingTool.m; sourceTree = "<group>"; };
@@ -111,24 +104,17 @@
 		57B32C1C14C695A600C39CA2 /* FTFoundationTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTFoundationTest-Info.plist"; sourceTree = "<group>"; };
 		57B32C1E14C695A600C39CA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57B32C2314C695A600C39CA2 /* FTFoundationTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTFoundationTest-Prefix.pch"; sourceTree = "<group>"; };
-		57B32C2714C697F200C39CA2 /* FTNSStringEncodeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNSStringEncodeTest.h; sourceTree = "<group>"; };
 		57B32C2814C697F200C39CA2 /* FTNSStringEncodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNSStringEncodeTest.m; sourceTree = "<group>"; };
-		57B32C2F14C6A69200C39CA2 /* FTNSStringDataLengthTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNSStringDataLengthTest.h; sourceTree = "<group>"; };
 		57B32C3014C6A69200C39CA2 /* FTNSStringDataLengthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNSStringDataLengthTest.m; sourceTree = "<group>"; };
-		57B32C3214C6A7C400C39CA2 /* FTBase64Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBase64Test.h; sourceTree = "<group>"; };
 		57B32C3314C6A7C400C39CA2 /* FTBase64Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBase64Test.m; sourceTree = "<group>"; };
 		57B32C3B14C6AB6400C39CA2 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		57B32C3C14C6ABAB00C39CA2 /* FTCRCTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCRCTest.h; sourceTree = "<group>"; };
 		57B32C3D14C6ABAB00C39CA2 /* FTCRCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCRCTest.m; sourceTree = "<group>"; };
-		57B32C3F14C6AC6200C39CA2 /* FTMD5Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMD5Test.h; sourceTree = "<group>"; };
 		57B32C4014C6AC6200C39CA2 /* FTMD5Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMD5Test.m; sourceTree = "<group>"; };
-		57B32C4214C6AD0B00C39CA2 /* FTSHA1Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSHA1Test.h; sourceTree = "<group>"; };
 		57B32C4314C6AD0B00C39CA2 /* FTSHA1Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSHA1Test.m; sourceTree = "<group>"; };
 		57B32C4514C6AFB500C39CA2 /* FTNSData+Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSData+Crypto.h"; sourceTree = "<group>"; };
 		57B32C4614C6AFB500C39CA2 /* FTNSData+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSData+Crypto.m"; sourceTree = "<group>"; };
 		57B32C4914C6B02800C39CA2 /* FTNSData+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSData+Random.h"; sourceTree = "<group>"; };
 		57B32C4A14C6B02800C39CA2 /* FTNSData+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSData+Random.m"; sourceTree = "<group>"; };
-		57B32C4E14C6B09400C39CA2 /* FTNSDataCryptoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNSDataCryptoTest.h; sourceTree = "<group>"; };
 		57B32C4F14C6B09400C39CA2 /* FTNSDataCryptoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNSDataCryptoTest.m; sourceTree = "<group>"; };
 		57D66C8814D90E5E004B3759 /* FTNSManagedObjectContext+Save.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSManagedObjectContext+Save.h"; sourceTree = "<group>"; };
 		57D66C8914D90E5E004B3759 /* FTNSManagedObjectContext+Save.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSManagedObjectContext+Save.m"; sourceTree = "<group>"; };
@@ -140,14 +126,8 @@
 		57EF27A11551108200C01032 /* FTOAuth10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTOAuth10.m; sourceTree = "<group>"; };
 		BE025569150601A70068D91D /* FTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTKeychain.h; sourceTree = "<group>"; };
 		BE02556A150601A70068D91D /* FTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTKeychain.m; sourceTree = "<group>"; };
-		BE1610021519CCF700FDEDE5 /* test2_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_schema.json; sourceTree = "<group>"; };
-		BE1610031519CCF800FDEDE5 /* test2_valid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_valid_1.json; sourceTree = "<group>"; };
 		BE45254715DE2CC400D68483 /* FTNSObject+TypeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSObject+TypeCheck.h"; sourceTree = "<group>"; };
 		BE45254815DE2CC400D68483 /* FTNSObject+TypeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSObject+TypeCheck.m"; sourceTree = "<group>"; };
-		BE5265E31510673600C4C909 /* FTJSONSchemaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTJSONSchemaTest.h; sourceTree = "<group>"; };
-		BE5265E91510695600C4C909 /* test1_invalid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_invalid_1.json; sourceTree = "<group>"; };
-		BE5265EA1510695600C4C909 /* test1_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_schema.json; sourceTree = "<group>"; };
-		BE5265EB1510695600C4C909 /* test1_valid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1_valid_1.json; sourceTree = "<group>"; };
 		BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIsEqualTest.m; sourceTree = "<group>"; };
 		BE7DD6AE154645A000C6D97F /* NSFileManager+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utilities.h"; sourceTree = "<group>"; };
 		BE7DD6AF154645A000C6D97F /* NSFileManager+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utilities.m"; sourceTree = "<group>"; };
@@ -160,15 +140,12 @@
 		BE99B27F1536BF9600904355 /* FTNSHTTPCookieStorage+Delete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSHTTPCookieStorage+Delete.m"; sourceTree = "<group>"; };
 		BE99B2801536BF9700904355 /* FTWeakDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWeakDelegateProxy.h; sourceTree = "<group>"; };
 		BE99B2811536BF9700904355 /* FTWeakDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWeakDelegateProxy.m; sourceTree = "<group>"; };
-		BEA331FC153664F200EE8D2D /* test2_invalid_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2_invalid_1.json; sourceTree = "<group>"; };
 		BEA33220153675F300EE8D2D /* csv_CR.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csv_CR.csv; sourceTree = "<group>"; };
 		BEA33221153675F300EE8D2D /* csv_CRLF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csv_CRLF.csv; sourceTree = "<group>"; };
 		BEA33222153675F300EE8D2D /* csv_LF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csv_LF.csv; sourceTree = "<group>"; };
-		BEA332271536760B00EE8D2D /* FTCSVParserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCSVParserTest.h; sourceTree = "<group>"; };
 		BEA332281536760B00EE8D2D /* FTCSVParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCSVParserTest.m; sourceTree = "<group>"; };
 		BEABD97415CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTNSDictionary+TypeCheckKeyPath.h"; sourceTree = "<group>"; };
 		BEABD97515CA571E003E5C73 /* FTNSDictionary+TypeCheckKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTNSDictionary+TypeCheckKeyPath.m"; sourceTree = "<group>"; };
-		BEABD97915CA58E3003E5C73 /* FTTypeCheckKeyPathTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTypeCheckKeyPathTest.h; sourceTree = "<group>"; };
 		BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTypeCheckKeyPathTest.m; sourceTree = "<group>"; };
 		BEC8613018B5889B00199D02 /* FTIsEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTIsEqual.h; sourceTree = "<group>"; };
 		BEC8613118B5896D00199D02 /* FTIsEqual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIsEqual.m; sourceTree = "<group>"; };
@@ -333,26 +310,15 @@
 		57B32C1A14C695A600C39CA2 /* FTFoundationTest */ = {
 			isa = PBXGroup;
 			children = (
-				57B32C2714C697F200C39CA2 /* FTNSStringEncodeTest.h */,
 				57B32C2814C697F200C39CA2 /* FTNSStringEncodeTest.m */,
-				57B32C2F14C6A69200C39CA2 /* FTNSStringDataLengthTest.h */,
 				57B32C3014C6A69200C39CA2 /* FTNSStringDataLengthTest.m */,
-				57574F1815AAA22C008EDA17 /* FTNSStringKeyValueTest.h */,
 				57574F1915AAA22C008EDA17 /* FTNSStringKeyValueTest.m */,
-				57B32C3214C6A7C400C39CA2 /* FTBase64Test.h */,
 				57B32C3314C6A7C400C39CA2 /* FTBase64Test.m */,
-				57B32C3C14C6ABAB00C39CA2 /* FTCRCTest.h */,
 				57B32C3D14C6ABAB00C39CA2 /* FTCRCTest.m */,
-				57B32C3F14C6AC6200C39CA2 /* FTMD5Test.h */,
 				57B32C4014C6AC6200C39CA2 /* FTMD5Test.m */,
-				57B32C4214C6AD0B00C39CA2 /* FTSHA1Test.h */,
 				57B32C4314C6AD0B00C39CA2 /* FTSHA1Test.m */,
-				57B32C4E14C6B09400C39CA2 /* FTNSDataCryptoTest.h */,
 				57B32C4F14C6B09400C39CA2 /* FTNSDataCryptoTest.m */,
-				BE5265E31510673600C4C909 /* FTJSONSchemaTest.h */,
-				BEA332271536760B00EE8D2D /* FTCSVParserTest.h */,
 				BEA332281536760B00EE8D2D /* FTCSVParserTest.m */,
-				BEABD97915CA58E3003E5C73 /* FTTypeCheckKeyPathTest.h */,
 				BEABD97A15CA58E3003E5C73 /* FTTypeCheckKeyPathTest.m */,
 				BE6FCD6118B5900B00038B37 /* FTIsEqualTest.m */,
 				BE5265E71510692B00C4C909 /* Test Data */,
@@ -400,23 +366,8 @@
 			isa = PBXGroup;
 			children = (
 				BEA3321F153675F300EE8D2D /* CSV */,
-				BE5265E81510695600C4C909 /* JSONSchema */,
 			);
 			name = "Test Data";
-			sourceTree = "<group>";
-		};
-		BE5265E81510695600C4C909 /* JSONSchema */ = {
-			isa = PBXGroup;
-			children = (
-				BE5265EA1510695600C4C909 /* test1_schema.json */,
-				BE5265EB1510695600C4C909 /* test1_valid_1.json */,
-				BE5265E91510695600C4C909 /* test1_invalid_1.json */,
-				BE1610021519CCF700FDEDE5 /* test2_schema.json */,
-				BE1610031519CCF800FDEDE5 /* test2_valid_1.json */,
-				BEA331FC153664F200EE8D2D /* test2_invalid_1.json */,
-			);
-			name = JSONSchema;
-			path = TestData/JSONSchema;
 			sourceTree = "<group>";
 		};
 		BEA3321F153675F300EE8D2D /* CSV */ = {
@@ -483,12 +434,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B32C1F14C695A600C39CA2 /* InfoPlist.strings in Resources */,
-				BE5265EC1510695600C4C909 /* test1_invalid_1.json in Resources */,
-				BE5265ED1510695600C4C909 /* test1_schema.json in Resources */,
-				BE5265EE1510695600C4C909 /* test1_valid_1.json in Resources */,
-				BE1610041519CCF800FDEDE5 /* test2_schema.json in Resources */,
-				BE1610051519CCF800FDEDE5 /* test2_valid_1.json in Resources */,
-				BEA331FD153664F200EE8D2D /* test2_invalid_1.json in Resources */,
 				BEA33223153675F300EE8D2D /* csv_CR.csv in Resources */,
 				BEA33224153675F300EE8D2D /* csv_CRLF.csv in Resources */,
 				BEA33225153675F300EE8D2D /* csv_LF.csv in Resources */,

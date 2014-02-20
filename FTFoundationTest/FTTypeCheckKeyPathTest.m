@@ -6,8 +6,11 @@
 //  Copyright (c) 2012年 feedtailor inc. All rights reserved.
 //
 
-#import "FTTypeCheckKeyPathTest.h"
+#import <XCTest/XCTest.h>
 #import "FTNSDictionary+TypeCheckKeyPath.h"
+
+@interface FTTypeCheckKeyPathTest : XCTestCase
+@end
 
 @implementation FTTypeCheckKeyPathTest
 {

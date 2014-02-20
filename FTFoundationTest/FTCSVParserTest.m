@@ -2,8 +2,11 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTCSVParserTest.h"
+#import <XCTest/XCTest.h>
 #import "FTCSVParser.h"
+
+@interface FTCSVParserTest : XCTestCase
+@end
 
 @implementation FTCSVParserTest
 

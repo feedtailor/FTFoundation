@@ -2,10 +2,13 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTNSDataCryptoTest.h"
+#import <XCTest/XCTest.h>
 #import "FTNSData+Crypto.h"
 #import "FTNSData+Random.h"
 #import "Common.h"
+
+@interface FTNSDataCryptoTest : XCTestCase
+@end
 
 @implementation FTNSDataCryptoTest
 

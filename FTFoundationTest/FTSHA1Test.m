@@ -2,9 +2,12 @@
 //  Copyright (c) 2012 feedtailor Inc. All rights reserved.
 //
 
-#import "FTSHA1Test.h"
+#import <XCTest/XCTest.h>
 #import "FTSHA1.h"
 #import "Common.h"
+
+@interface FTSHA1Test : XCTestCase
+@end
 
 @implementation FTSHA1Test
 
