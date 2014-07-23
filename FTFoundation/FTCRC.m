@@ -70,7 +70,7 @@ static uint32_t ft_update_crc(uint32_t crc, unsigned char *buf, uint32_t len)
 
 -(void) updateWithData:(NSData*)data
 {
-	self.CRC = ft_update_crc(self.CRC, (unsigned char*)[data bytes], [data length]);
+	self.CRC = ft_update_crc(self.CRC, (unsigned char*)[data bytes], (uint32_t)[data length]);
 }
 
 -(void) clear
