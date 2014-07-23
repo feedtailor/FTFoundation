@@ -44,11 +44,13 @@
 					}
 				}
 				
+#if TARGET_OS_IPHONE
 				if ((flags & kSCNetworkReachabilityFlagsIsWWAN) == kSCNetworkReachabilityFlagsIsWWAN) {
 					// ... but WWAN connections are OK if the calling application
 					//     is using the CFNetwork (CFSocketStream?) APIs.
 					ret = kFTNetworkStatus_WWAN;
 				}
+#endif
 			}
 		}
 		
@@ -85,11 +87,13 @@
 					}
 				}
 				
+#if TARGET_OS_IPHONE
 				if ((flags & kSCNetworkReachabilityFlagsIsWWAN) == kSCNetworkReachabilityFlagsIsWWAN) {
 					// ... but WWAN connections are OK if the calling application
 					//     is using the CFNetwork (CFSocketStream?) APIs.
 					ret |= kFTNetworkStatusMask_WWAN;
 				}
+#endif
 			}
 		}
 		

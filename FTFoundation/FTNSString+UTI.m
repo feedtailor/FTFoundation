@@ -3,7 +3,10 @@
 //
 
 #import "FTNSString+UTI.h"
+
+#if TARGET_OS_IPHONE
 #import <MobileCoreServices/MobileCoreServices.h>
+#endif
 
 @implementation NSString (FTNSStringUTI)
 
